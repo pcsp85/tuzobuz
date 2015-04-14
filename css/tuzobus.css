@@ -1,0 +1,19 @@
+/* Tuzobus */
+
+.navbar-toggle{
+	float: left;
+	border: 0;
+}
+
+ul.navmenu-nav{
+	margin-top: 51px;
+}
+.navbar{
+	background: green;
+}
+.navbar a.navbar-brand{
+	color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
