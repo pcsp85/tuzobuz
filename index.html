@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Tuzobus">
+<html lang="en" ng-app="tuzobusApp">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TUZOBUS</title>
-<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/jasny-bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/tuzobus.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jasny-bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/tuzobus.css">
 </head>
 <body>
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-		<ul class="nav navmenu-nav">
-			<li><a href="#/mapa" ng-click="selected = 'notes'" ng-class="{'active': selected == 'notes'}"><i class="fa fa-location-arrow"></i> Mapa</a></li>
+		<ul class="nav navmenu-nav" ng-controller="tbMenuCtrl">
+			<li ng-click="hide()"><a href="#/mapa" ng-click="selected = 'mapa'" ng-class="{'active': selected == 'mapa'}"><i class="fa fa-location-arrow"></i> Mapa</a></li>
 			<li><a href="#"><i class="fa fa-"></i> Estaciones</a></li>
 			<li><a href="#"><i class="fa fa-bus"></i> Servicios</a></li>
 			<li><a href="#"><i class="fa fa-clock-o"></i> Horarios</a></li>
@@ -32,15 +32,17 @@
       <a class="navbar-brand" href="#"><i class="fa fa-bus"></i> Tuzobús</a>
     </div>
     <div class="container">
-      <div ng-view></div>
+      <div ng-view class="view-frame"></div>
     </div>
 
-	<script type="text/javascript" src="./assets/js/jquery-1.11.2.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/js/jasny-bootstrap.min.js"></script>
 
-	<script type="text/javascript" src="./assets/js/angular.min.js"></script>
-	<script type="text/javascript" src="./app/app.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controllers.js"></script>
 	
-	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./assets/js/jasny-bootstrap.min.js"></script>
 </body>
 </html>
