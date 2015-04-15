@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="Tuzobus">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TUZOBUS</title>
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/tuzobus.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/jasny-bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/tuzobus.css">
 </head>
 <body>
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
 		<ul class="nav navmenu-nav">
-			<li><a href="#"><i class="fa fa-location-arrow"></i> Mapa</a></li>
+			<li><a href="#/mapa" ng-click="selected = 'notes'" ng-class="{'active': selected == 'notes'}"><i class="fa fa-location-arrow"></i> Mapa</a></li>
 			<li><a href="#"><i class="fa fa-"></i> Estaciones</a></li>
 			<li><a href="#"><i class="fa fa-bus"></i> Servicios</a></li>
 			<li><a href="#"><i class="fa fa-clock-o"></i> Horarios</a></li>
@@ -32,16 +32,15 @@
       <a class="navbar-brand" href="#"><i class="fa fa-bus"></i> Tuzobús</a>
     </div>
     <div class="container">
-      <div class="page-header">
-        <h1>Navmenu Template</h1>
-      </div>
-      <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
-      <p>Also take a look at the examples for a navmenu with <a href="../navmenu-push">push effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
+      <div ng-view></div>
     </div>
 
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery-1.11.2.min.js"></script>
+
+	<script type="text/javascript" src="./assets/js/angular.min.js"></script>
+	<script type="text/javascript" src="./app/app.js"></script>
+	
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jasny-bootstrap.min.js"></script>
 </body>
 </html>
