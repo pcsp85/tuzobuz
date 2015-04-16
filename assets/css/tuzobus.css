@@ -1,19 +1,68 @@
 /* Tuzobus */
 
-.navbar-toggle{
+/* Importando Fuentes*/
+@import url('../fonts/Comfortaa.css'); /* Comfortaa */
+@import url('../fonts/Comfortaa-Bold.css'); /* Comfortaa-Bold */
+@import url('../fonts/Comfortaa-Light.css'); /* Comfortaa-Light */
+
+.navbar{
+	background: #9DCD5D;
+}
+.navbar-default a.navbar-brand{
+	font-family: 'Comfortaa-Bold', sans-serif;
+	color: #fff;
+	padding: 15px 0;
+	font-size: 1.8em
+}
+.navbar-default a.navbar-brand:focus, .navbar-default a.navbar-brand:hover{
+	color: #fff;
+}
+.navbar-default .navbar-toggle{
 	float: left;
 	border: 0;
-}
-
-ul.navmenu-nav{
-	margin-top: 51px;
-}
-.navbar{
-	background: green;
-}
-.navbar a.navbar-brand{
-	color: #fff;
+	margin-left: -.8em;
+	margin-right: .2em;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
+  height: 3px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background: none;
+}
+.navbar-default a.navbar-brand img{
+	display: inline-block;
+}
+.navbar-default .settings .settings-toggle{
+	float: right;
+	height: 50px;
+	background: none;
+	color: #fff;
+	border:0;
+}
+.navbar-default .settings .dropdown-menu{
+	margin-top: 52px;
+}
+.navmenu-default{
+	background: #1B1C1E;
+	border-right: 0;
+}
+.navmenu-default .navmenu-nav{
+	margin-top: 50px;
+}
+.navmenu-default .navmenu-nav>li>a, .navbar-default .navbar-offcanvas .navmenu-nav>li>a{
+	font-family: 'Comfortaa-Bold', sans-serif;
+	color: #fff;
+}
+.navmenu-default .navmenu-nav>li>a:focus,.navmenu-default .navmenu-nav>li>a:hover,.navmenu-default .navmenu-nav>li>a.active, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, .navbar-default .navbar-offcanvas .navmenu-nav>li>a.active{
+	background: #4C4D50;
+	color: #fff;
+}
+
+.container{
+	background: #26282A;
+	padding-top: 72px;
+	min-height: 500px;
+	color: #fff;
+	font-family: 'Comfortaa', sans-serif;	
 }

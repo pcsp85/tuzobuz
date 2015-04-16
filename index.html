@@ -12,15 +12,7 @@
 <body>
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
 		<ul class="nav navmenu-nav" ng-controller="tbMenuCtrl">
-			<li ng-click="hide()"><a href="#/mapa" ng-click="selected = 'mapa'" ng-class="{'active': selected == 'mapa'}"><i class="fa fa-location-arrow"></i> Mapa</a></li>
-			<li><a href="#"><i class="fa fa-"></i> Estaciones</a></li>
-			<li><a href="#"><i class="fa fa-bus"></i> Servicios</a></li>
-			<li><a href="#"><i class="fa fa-clock-o"></i> Horarios</a></li>
-			<li><a href="#"><i class="fa fa-"></i> ¿Cómo usar Tuzobus?</a></li>
-			<li><a href="#"><i class="fa fa-"></i> Estaciones cercanas</a></li>
-			<li><a href="#"><i class="fa fa-"></i> Rutas alimentadoras</a></li>
-			<li><a href="#"><i class="fa fa-search"></i> ¿Como llegar?</a></li>
-			<li><a href="#"><i class="fa fa-bell"></i> Notificaciones</a></li>
+			<li ng-repeat="item in items" ><a href="#/{{item.target}}" ng-click="hide();"><img ng-src="{{item.iconUrl}}"> {{item.menu}}</a></li>
 		</ul>
 	</div>
 	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
@@ -29,7 +21,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><i class="fa fa-bus"></i> Tuzobús</a>
+      <a class="navbar-brand" href="#/"><img src="assets/img/bus_w.png"> Tuzobús</a>
+      <div class="dropdown settings">
+      	<button class="settings-toggle dropdown-toggle" type="button" id="dw_settings" data-toggle="dropdown" aria-expanded="false">
+      		<i class="fa fa-ellipsis-v fa-2x"></i>
+      	</button>
+      	<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dw_settings">
+      		<li><a href="#/perfil">Perfil</a></li>
+      	</ul>
+      </div>
     </div>
     <div class="container">
       <div ng-view class="view-frame"></div>
@@ -41,8 +41,10 @@
 
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
 	<script src="app/app.js"></script>
 	<script src="app/controllers.js"></script>
+	<script src="app/services.js"></script>
 	
 </body>
 </html>

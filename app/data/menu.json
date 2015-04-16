@@ -1,0 +1,47 @@
+[
+	{
+		"menu" : "Mapa",
+		"target" : "mapa",
+		"iconUrl" : "assets/img/menu_icons/mapa.png"
+	},
+	{
+		"menu" : "Estaciones",
+		"target" : "estaciones",
+		"iconUrl" : "assets/img/menu_icons/estaciones.png"
+	},
+	{
+		"menu" : "Servicios",
+		"target" : "servicios",
+		"iconUrl" : "assets/img/menu_icons/servicios.png"
+	},
+	{
+		"menu" : "Horarios",
+		"target" : "horarios",
+		"iconUrl" : "assets/img/menu_icons/horarios.png"
+	},
+	{
+		"menu" : "¿Cómo usar Tuzobus?",
+		"target" : "comoUsar",
+		"iconUrl" : "assets/img/menu_icons/comoUsar.png"
+	},
+	{
+		"menu" : "Estaciones cercanas",
+		"target" : "estacionesCercanas",
+		"iconUrl" : "assets/img/menu_icons/estacionesCercanas.png"
+	},
+	{
+		"menu" : "Rutas alimentadoras",
+		"target" : "rutasAlimentadoras",
+		"iconUrl" : "assets/img/menu_icons/rutasAlimentadoras.png"
+	},
+	{
+		"menu" : "¿Como llegar?",
+		"target" : "comoLlegar",
+		"iconUrl" : "assets/img/menu_icons/comoLlegar.png"
+	},
+	{
+		"menu" : "Notificaciones",
+		"target" : "notificaciones",
+		"iconUrl" : "assets/img/menu_icons/notificaciones.png"
+	}
+]
