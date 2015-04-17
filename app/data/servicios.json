@@ -1,0 +1,37 @@
+[
+	{
+		"id" : "t01",
+		"name" : "T01",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_g.png",
+		"mapa" : ""
+	},
+	{
+		"id" : "t02",
+		"name" : "T02",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_y.png",
+		"mapa" : ""
+	},
+	{
+		"id" : "t03",
+		"name" : "T03",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_c.png",
+		"mapa" : ""
+	},
+	{
+		"id" : "t04",
+		"name" : "T04",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_p.png",
+		"mapa" : ""
+	},
+	{
+		"id" : "t05",
+		"name" : "T05",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_o.png",
+		"mapa" : ""
+	}
+]

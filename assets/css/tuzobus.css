@@ -4,7 +4,9 @@
 @import url('../fonts/Comfortaa.css'); /* Comfortaa */
 @import url('../fonts/Comfortaa-Bold.css'); /* Comfortaa-Bold */
 @import url('../fonts/Comfortaa-Light.css'); /* Comfortaa-Light */
-
+body{
+	background: #26282A;
+}
 .navbar{
 	background: #9DCD5D;
 }
@@ -60,9 +62,59 @@
 }
 
 .container{
-	background: #26282A;
 	padding-top: 72px;
-	min-height: 500px;
 	color: #fff;
 	font-family: 'Comfortaa', sans-serif;	
+}
+.container h1{
+	font-size: 1.4em;
+	background: #3B3E40;
+	border-bottom: 2px solid #2F2F2F;
+	padding: .3em;
+	margin-top: 0;
+}
+
+.servicio{
+	float: left;
+	width: 50%;
+	padding-top: 1em;
+}
+.servicio:nth-child(2){
+	width: 100%;
+}
+.servicio h2{
+	font-size: 1.2em;
+	padding: .3em;
+	margin-bottom: 0;
+}
+
+.servicio.t01{
+	background: #9DCD5D;
+}
+.servicio.t01 h2{
+	background: #91B352;
+}
+.servicio.t02{
+	background: #EACB3F;
+}
+.servicio.t02 h2{
+	background: #D2B33A;
+}
+.servicio.t03{
+	background: #2EB8E5;
+}
+.servicio.t03 h2{
+	background: #24A7C6;
+}
+.servicio.t04{
+	background: #6A2777;
+}
+.servicio.t04 h2{
+	background: #4A1B55;
+}
+.servicio.t05{
+	background: #F08E2E;
+}
+.servicio.t05 h2{
+	background: #D27D2E;
 }

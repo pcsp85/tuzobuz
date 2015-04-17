@@ -4,7 +4,8 @@
 
 var tuzobusApp = angular.module('tuzobusApp',[
 	'ngRoute',
-	'tuzobusController'
+	'tuzobusController',
+	'tuzobusServices'
 	]);
 
 tuzobusApp.config(['$routeProvider',
@@ -21,9 +22,10 @@ tuzobusApp.config(['$routeProvider',
 		})
 		.when('/servicios', {
 			templateUrl: 'views/servicios.html',
+			controller: 'tbServicios',
 		})
 		.when('/horarios', {
-			templateUrl: 'views/servicios.html',
+			templateUrl: 'views/horarios.html',
 		})
 		.when('/comoUsar', {
 			templateUrl: 'views/comoUsar.html',

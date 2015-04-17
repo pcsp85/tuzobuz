@@ -16,3 +16,14 @@ tuzobusController.controller('tbMenuCtrl',['$scope', '$http', function ($scope, 
 		$('.navmenu-default a[href="#/'+this.item.target+'"]').addClass('active').parent().siblings().children('a').removeClass('active');
 	};
 }]);
+
+tuzobusController.controller('tbServicios',['$scope', '$http', function ($scope, $http){
+	$scope.servicios = [];
+	$http.get('app/data/servicios.json').success(function (data){
+		$scope.servicios = data;
+	});
+
+	$scope.view_map = function (e){
+		console.log(e);
+	};
+}]);
