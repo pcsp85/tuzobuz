@@ -77,7 +77,7 @@ body{
 .servicio{
 	float: left;
 	width: 50%;
-	padding-top: 1em;
+	padding-top: 1.5em;
 }
 .servicio:nth-child(2){
 	width: 100%;

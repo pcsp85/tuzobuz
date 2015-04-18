@@ -4,34 +4,34 @@
 		"name" : "T01",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_g.png",
-		"mapa" : ""
+		"mapa" : "assets/img/servicio_t01.png"
 	},
 	{
 		"id" : "t02",
 		"name" : "T02",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_y.png",
-		"mapa" : ""
+		"mapa" : "assets/img/servicio_t02.png"
 	},
 	{
 		"id" : "t03",
 		"name" : "T03",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_c.png",
-		"mapa" : ""
+		"mapa" : "assets/img/servicio_t03.png"
 	},
 	{
 		"id" : "t04",
 		"name" : "T04",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_p.png",
-		"mapa" : ""
+		"mapa" : "assets/img/servicio_t04.png"
 	},
 	{
 		"id" : "t05",
 		"name" : "T05",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_o.png",
-		"mapa" : ""
+		"mapa" : "assets/img/servicio_t05.png"
 	}
 ]

@@ -24,6 +24,10 @@ tuzobusApp.config(['$routeProvider',
 			templateUrl: 'views/servicios.html',
 			controller: 'tbServicios',
 		})
+		.when('/servicios/:idServicio',{
+			templateUrl: 'views/servicioDetail.html',
+			controller: 'tbServicio',
+		})
 		.when('/horarios', {
 			templateUrl: 'views/horarios.html',
 		})

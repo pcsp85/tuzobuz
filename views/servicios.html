@@ -1,9 +1,9 @@
 <div class="row servicios" ng-controller="tbServicios">
   <div class="col-xs-12">
 	<h1>Servicios</h1>
-	<div ng-repeat="servicio in servicios" class="servicio  {{servicio.id}} text-center" ng-click="view_map(this)">
+	<a ng-repeat="servicio in servicios" class="servicio  {{servicio.id}} text-center" href="#/servicios/{{servicio.id}}">
 		<img ng-src="{{servicio.icon_1}}">
 		<h2 class="text-left">{{servicio.name}}</h2>
-	</div>
+	</a>
   </div>
 </div>
