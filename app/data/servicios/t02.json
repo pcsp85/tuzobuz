@@ -1,0 +1,7 @@
+{
+	"id" : "t02",
+	"name" : "T02",
+	"icon_1" : "assets/img/circle_bus_w.png",
+	"icon_2" : "assets/img/circle_bus_y.png",
+	"mapa" : "assets/img/servicio_t02.png"
+}

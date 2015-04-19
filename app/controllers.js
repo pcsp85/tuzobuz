@@ -28,6 +28,9 @@ tuzobusController.controller('tbServicios',['$scope', '$http', function ($scope,
 	};
 }]);
 
-tuzobusController.controller('tbServicio',['$scope', '$routeParams', function ($scope, $routeParams){
-	$scope.idServicio = $routeParams.idServicio;
+tuzobusController.controller('tbServicio',['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http){
+	$scope.servicio = [];
+	$http.get('app/data/servicios/'+$routeParams.idServicio+'.json').success(function (data){
+		$scope.servicio =  data;
+	});
 }]);

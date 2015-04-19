@@ -17,6 +17,9 @@ tuzobusApp.config(['$routeProvider',
 		.when('/mapa',{
 			templateUrl: 'views/mapa.html',
 		})
+		.when('/mapa/:idServicio',{
+			templateUrl: 'views/mapa.html',
+		})
 		.when('/estaciones',{
 			templateUrl: 'views/estaciones.html',
 		})

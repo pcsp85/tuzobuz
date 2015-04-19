@@ -118,3 +118,12 @@ body{
 .servicio.t05 h2{
 	background: #D27D2E;
 }
+
+.servicioDetail h1 a{
+	display: block;
+	float: right;
+}
+.servicio_mapa{
+	width: 100%;
+	height: auto;
+}
