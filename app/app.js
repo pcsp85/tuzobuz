@@ -60,28 +60,3 @@ tuzobusApp.config(['$routeProvider',
 			redirectTo: '/'
 		})
 	}]);
-tuzobusApp.factory('channel', function(){
-      return function () {
-        var callbacks = [];
-        this.add = function (cb) {
-          callbacks.push(cb);
-        };
-        this.invoke = function () {
-          callbacks.forEach(function (cb) {
-            cb();
-          });
-        };
-        return this;
-      };
-    })
-    .service('drawChannel',['channel',function(channel){
-      return new channel()
-    }])
-    .service('clearChannel',['channel',function(channel){
-      return new channel()
-    }])
-    .run(['$templateCache','uiGmapLogger', function ($templateCache,Logger) {
-      Logger.doLog = true;
-      $templateCache.put('draw.tpl.html', '<button class="btn btn-lg btn-primary hide"  ng-click="drawWidget.controlClick()">{{drawWidget.controlText}}</button>');
-      $templateCache.put('clear.tpl.html', '<button class="btn btn-lg btn-primary hide"  ng-click="clearWidget.controlClick()">{{clearWidget.controlText}}</button>');
-    }]);

@@ -1,20 +1,11 @@
 <h1>Mapa</h1>
-<div data-ng-controller="tbGMCtrl"  class="middle">
+<div class="middle">
     <ui-gmap-google-map id="map"
          center="map.center"
-         pan="map.pan"
          zoom="map.zoom"
          draggable="true"
          refresh="map.refresh"
          options="map.options"
-         events="map.events"
          bounds="map.bounds">
-
-        <ui-gmap-map-control template="clear.tpl.html" position="top-right" index="1" controller="mapWidgetCtrl"></ui-gmap-map-control>
-
-        <ui-gmap-free-draw-polygons polygons="map.polys" draw="map.draw" ></ui-gmap-free-draw-polygons>
     </ui-gmap-google-map>
-    <ul>
-        <li ng-repeat="p in map.polys">{{p.getPath()}}</li>
-    </ul>
 </div>
