@@ -12,7 +12,7 @@
 <body>
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
 		<ul class="nav navmenu-nav" ng-controller="tbMenuCtrl">
-			<li ng-repeat="item in items" ><a href="#/{{item.target}}" ng-click="hide();"><img ng-src="{{item.iconUrl}}"> {{item.menu}}</a></li>
+			<li ng-repeat="item in items" ><a href="#/{{item.target}}" ng-click="hide();" ><img ng-src="{{item.iconUrl}}"> {{item.menu}}</a></li>
 		</ul>
 	</div>
 	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
@@ -39,12 +39,16 @@
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.mobile.custom.min.js"></script>
 	<script src="assets/js/jasny-bootstrap.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=true&language=es"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.underscore.js"></script>
 
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-route/angular-route.js"></script>
 	<script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="assets/js/angular-google-maps/angular-google-maps_dev_mapped.js"></script>
 	<script src="app/app.js"></script>
 	<script src="app/controllers.js"></script>
+  <script src="app/filters.js"></script>
 	<script src="app/services.js"></script>
 
   <script src="assets/js/tuzobus.js"></script>

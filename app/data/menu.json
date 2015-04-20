@@ -20,7 +20,7 @@
 		"iconUrl" : "assets/img/menu_icons/horarios.png"
 	},
 	{
-		"menu" : "¿Cómo usar Tuzobus?",
+		"menu" : "¿Cómo usar Tuzobús?",
 		"target" : "comoUsar",
 		"iconUrl" : "assets/img/menu_icons/comoUsar.png"
 	},
@@ -35,7 +35,7 @@
 		"iconUrl" : "assets/img/menu_icons/rutasAlimentadoras.png"
 	},
 	{
-		"menu" : "¿Como llegar?",
+		"menu" : "¿Cómo llegar?",
 		"target" : "comoLlegar",
 		"iconUrl" : "assets/img/menu_icons/comoLlegar.png"
 	},
