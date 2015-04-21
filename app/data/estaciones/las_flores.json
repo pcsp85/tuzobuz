@@ -1,0 +1,9 @@
+{
+	"id": "las_flores",
+	"name": "Las flores",
+	"icon": "",
+	"latitude" : 20.0246387,
+	"longitude": -98.8088192,
+	"servicios":[
+		"t01"		]
+}

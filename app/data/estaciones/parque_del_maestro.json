@@ -1,0 +1,10 @@
+{
+	"id": "parque_del_maestro",
+	"name": "Parque del maestro",
+	"icon": "",
+	"latitude" : 20.1206532,
+	"longitude": -98.7402719,
+	"servicios":[
+		"t01",
+		"t04"		]
+}

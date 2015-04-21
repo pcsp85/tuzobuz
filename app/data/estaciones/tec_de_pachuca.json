@@ -1,0 +1,12 @@
+{
+	"id": "tec_de_pachuca",
+	"name": "Tec. de Pachuca",
+	"icon": "",
+	"latitude" : 20.0833382,
+	"longitude": -98.7727024,
+	"servicios":[
+		"t01",
+		"t03",
+		"t05"
+	]
+}

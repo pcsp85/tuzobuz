@@ -1,0 +1,10 @@
+{
+	"id": "ninos_heroes",
+	"name": "Fuente Niños héroes",
+	"icon": "",
+	"latitude" : 20.125224,
+	"longitude": -98.7328416,
+	"servicios":[
+		"t01",
+		"t02"		]
+}

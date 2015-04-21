@@ -1,0 +1,12 @@
+{
+	"id": "parque_de_convivencia",
+	"name": "Parque de convivencia",
+	"icon": "",
+	"latitude" : 20.11711,
+	"longitude": -98.74488,
+	"servicios":[
+		"t01",
+		"t02",
+		"t03",
+		"t04"		]
+}

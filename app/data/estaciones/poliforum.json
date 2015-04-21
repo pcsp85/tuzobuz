@@ -1,0 +1,11 @@
+{
+	"id": "poliforum",
+	"name": "Poliforum",
+	"icon": "",
+	"latitude" : 20.1086255,
+	"longitude": -98.7549951,
+	"servicios":[
+		"t01",
+		"t03",
+		"t04"		]
+}

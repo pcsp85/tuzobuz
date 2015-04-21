@@ -21,11 +21,12 @@ tuzobusApp.config(['$routeProvider',
 			controller: 'tbGMCtrl',
 		})
 		.when('/mapa/:mtype/:mid',{
-			templateUrl: 'views/mapaDetail.html',
+			templateUrl: 'views/mapa.html',
 			controller: 'tbGMDetCtrl',
 		})
 		.when('/estaciones',{
 			templateUrl: 'views/estaciones.html',
+			controller: 'tbEstaciones',
 		})
 		.when('/servicios', {
 			templateUrl: 'views/servicios.html',

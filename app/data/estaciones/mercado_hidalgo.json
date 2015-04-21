@@ -1,0 +1,10 @@
+{
+	"id": "mercado_hidalgo",
+	"name": "Mercado Hidalgo",
+	"icon": "",
+	"latitude" : 20.1292,
+	"longitude": -98.73132,
+	"servicios":[
+		"t01",
+		"t02"		]
+}

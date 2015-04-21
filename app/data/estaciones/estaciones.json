@@ -79,7 +79,7 @@
 		]
 	},
 	{
-		"id": "villas de pachuca",
+		"id": "villas_de_pachuca",
 		"name": "Villas de Pachuca",
 		"icon": "",
 		"latitude" : 20.0562101,
@@ -233,6 +233,17 @@
 		]
 	},
 	{
+		"id": "central_de_autobuses",
+		"name": "Central de autobuses",
+		"icon": "",
+		"latitude" : 20.10665,
+		"longitude": -98.754167,
+		"servicios":[
+			"t01",
+			"t05"
+		]
+	},
+	{
 		"id": "poliforum",
 		"name": "Poliforum",
 		"icon": "",
@@ -257,7 +268,7 @@
 		]
 	},
 	{
-		"id": "prepa 1",
+		"id": "prepa_1",
 		"name": "Prepa 1",
 		"icon": "",
 		"latitude" : 20.1147067,
@@ -357,16 +368,5 @@
 			"t02",
 			"t03",
 			"t04"		]
-	},
-	{
-		"id": "central_de_autobuses",
-		"name": "Central de autobuses",
-		"icon": "",
-		"latitude" : 20.10665,
-		"longitude": -98.754167,
-		"servicios":[
-			"t01",
-			"t05"
-		]
 	}
 ]

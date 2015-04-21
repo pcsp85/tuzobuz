@@ -1,0 +1,12 @@
+{
+	"id": "plaza_juarez",
+	"name": "Plaza Juárez",
+	"icon": "",
+	"latitude" : 20.1226926,
+	"longitude": -98.7370367,
+	"servicios":[
+		"t01",
+		"t02",
+		"t03",
+		"t04"		]
+}

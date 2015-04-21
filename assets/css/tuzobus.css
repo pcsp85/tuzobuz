@@ -88,7 +88,26 @@ body{
 	display: block;
 	margin: 1em auto .5em;
 }
-
+.estaciones{
+	list-style: none;
+	margin: -20px 0 0 0;
+	padding: 0
+}
+.estaciones li {
+	clear: both;
+}
+.estaciones li .icon{
+	width: 20%;
+	float: left;
+	background: url('../img/estaciones_icons/back.png') no-repeat center;
+	background-size: contain;
+}
+.estaciones li .stage1{
+	width: 80%;
+	float: left;
+	padding-top: 1em;
+	overflow: hidden;
+}
 .servicio{
 	float: left;
 	width: 50%;

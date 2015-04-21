@@ -1,0 +1,12 @@
+{
+	"id": "galerias_pachuca",
+	"name": "Galerías Pachuca",
+	"icon": "",
+	"latitude" : 20.0943968,
+	"longitude": -98.7697399,
+	"servicios":[
+		"t01",
+		"t03",
+		"t05"
+	]
+}

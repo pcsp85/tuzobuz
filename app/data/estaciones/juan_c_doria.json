@@ -1,0 +1,12 @@
+{
+	"id": "juan_c_doria",
+	"name": "Juan C Doria",
+	"icon": "",
+	"latitude" : 20.0682838,
+	"longitude": -98.7802719,
+	"servicios":[
+		"t01",
+		"t03",
+		"t05"
+	]
+}

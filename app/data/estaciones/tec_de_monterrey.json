@@ -1,0 +1,14 @@
+{
+	"id": "tec_de_monterrey",
+	"name": "TEC de Monterrey",
+	"icon": "",
+	"latitude" : 20.0981557,
+	"longitude": -98.7658071,
+	"servicios":[
+		"t01",
+		"t02",
+		"t03",
+		"t04",
+		"t05"
+	]
+}

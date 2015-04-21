@@ -1,0 +1,13 @@
+{
+	"id": "quinta_mary",
+	"name": "Quinta Mary",
+	"icon": "",
+	"latitude" : 20.1162313,
+	"longitude": -98.7426219,
+	"servicios":[
+		"t01",
+		"t02",
+		"t03",
+		"t04"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"id": "villas_de_pachuca",
+	"name": "Villas de Pachuca",
+	"icon": "",
+	"latitude" : 20.0562101,
+	"longitude": -98.7866083,
+	"servicios":[
+		"t01",
+		"t02",
+		"t03",
+		"t04",
+		"t05"
+	]
+}

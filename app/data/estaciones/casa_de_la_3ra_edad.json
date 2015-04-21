@@ -1,0 +1,12 @@
+{
+	"id": "casa_de_la_3ra_edad",
+	"name": "Casa de la 3ra edad",
+	"icon": "",
+	"latitude" : 20.0422091,
+	"longitude": -98.7940643,
+	"servicios":[
+		"t01",
+		"t02",
+		"t05"
+	]
+}

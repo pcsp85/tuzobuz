@@ -1,11 +1,14 @@
-<h1>Mapa</h1>
 <div class="middle">
+    <h1>{{h1}}</h1>
     <ui-gmap-google-map id="map"
          center="map.center"
          zoom="map.zoom"
          draggable="true"
          refresh="map.refresh"
          options="map.options"
+         events="map.events"
          bounds="map.bounds">
+         <ui-gmap-markers models="marcas" coords="'self'" icon="'icon'">
+        </ui-gmap-markers>
     </ui-gmap-google-map>
 </div>

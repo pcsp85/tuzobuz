@@ -1,0 +1,10 @@
+{
+	"id": "revolucion",
+	"name": "Revolución",
+	"icon": "",
+	"latitude" : 20.1185733,
+	"longitude": -98.7391947,
+	"servicios":[
+		"t01",
+		"t04"		]
+}

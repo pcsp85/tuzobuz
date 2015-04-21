@@ -1,0 +1,12 @@
+{
+	"id": "seph",
+	"name": "SEPH",
+	"icon": "",
+	"latitude" : 20.0790738,
+	"longitude": -98.7746894,
+	"servicios":[
+		"t01",
+		"t03",
+		"t05"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"id": "cecati",
+	"name": "CECATI",
+	"icon": "",
+	"latitude" : 20.1031581,
+	"longitude": -98.7605992,
+	"servicios":[
+		"t01",
+		"t02",
+		"t03",
+		"t04",
+		"t05"
+	]
+}

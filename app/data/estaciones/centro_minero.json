@@ -1,0 +1,12 @@
+{
+	"id": "centro_minero",
+	"name": "Centro Minero",
+	"icon": "",
+	"latitude" : 20.0907946,
+	"longitude": -98.7708959,
+	"servicios":[
+		"t01",
+		"t03",
+		"t05"
+	]
+}

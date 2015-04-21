@@ -1,0 +1,12 @@
+{
+	"id": "los_angeles",
+	"name": "Los ángeles",
+	"icon": "",
+	"latitude" : 20.047077,
+	"longitude": -98.7913214,
+	"servicios":[
+		"t01",
+		"t02",
+		"t05"
+	]
+}
