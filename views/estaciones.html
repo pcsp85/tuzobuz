@@ -1,9 +1,15 @@
 <div class="row">
 <ul class="estaciones">
-	<li ng-repeat="estacion in estaciones">
+	<li ng-repeat="estacion in estaciones" onclick="est_toogle($(this));">
 		<div class="icon">&nbsp;</div>
-		<div class="stage1">{{estacion.name}}<br><small>ver mapa</small></div>
-		<div class="stage2"></div>
+		<div class="stage2">
+			<a href="#/mapa/estacion/{{estacion.id}}"><img src="assets/img/circle_mapa.png" class="st"></a>
+			<img ng-repeat="img in estacion.servicios" ng-src="assets/img/circle_bus_{{img}}.png" class="st">
+		</div>
+		<div class="stage1">
+			<div ng-repeat="ser in estacion.servicios" class="ser {{ser}}">&nbsp;</div>
+			{{estacion.name}}<br><small>ver mapa</small>
+		</div>
 	</li>
 </ul>
 </div>

@@ -2,6 +2,6 @@
 	"id" : "t03",
 	"name" : "T03",
 	"icon_1" : "assets/img/circle_bus_w.png",
-	"icon_2" : "assets/img/circle_bus_c.png",
+	"icon_2" : "assets/img/circle_bus_t03.png",
 	"mapa" : "assets/img/servicio_t03.png"
 }

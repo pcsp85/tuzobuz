@@ -3,35 +3,35 @@
 		"id" : "t01",
 		"name" : "T01",
 		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_g.png",
+		"icon_2" : "assets/img/circle_bus_t01.png",
 		"mapa" : "assets/img/servicio_t01.png"
 	},
 	{
 		"id" : "t02",
 		"name" : "T02",
 		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_y.png",
+		"icon_2" : "assets/img/circle_bus_t02.png",
 		"mapa" : "assets/img/servicio_t02.png"
 	},
 	{
 		"id" : "t03",
 		"name" : "T03",
 		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_c.png",
+		"icon_2" : "assets/img/circle_bus_t03.png",
 		"mapa" : "assets/img/servicio_t03.png"
 	},
 	{
 		"id" : "t04",
 		"name" : "T04",
 		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_p.png",
+		"icon_2" : "assets/img/circle_bus_t04.png",
 		"mapa" : "assets/img/servicio_t04.png"
 	},
 	{
 		"id" : "t05",
 		"name" : "T05",
 		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_o.png",
+		"icon_2" : "assets/img/circle_bus_t05.png",
 		"mapa" : "assets/img/servicio_t05.png"
 	}
 ]

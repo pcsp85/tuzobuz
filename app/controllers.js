@@ -107,7 +107,11 @@ tuzobusController.controller('tbEstaciones',['$scope', 'Estaciones', function ($
   $scope.estaciones = Estaciones.query(function (data){
     setTimeout(function(){
       $('.icon').each(function (){
-        $(this).css('height', $(this).width());
+        var nh = $(this).width(), stw = ($(this).next().width()-$(this).next().width()*.15)/6, mst = (nh-stw)/2;
+        $(this).css('height', nh)
+          .next().css('height', nh)
+          .find('.st').css('width', stw).css('margin-top', mst);
+        $(this).next().next().css('height', nh);
       });
     }, 100);
   });
