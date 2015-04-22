@@ -219,9 +219,7 @@ body{
 	height: auto;
 }
 .angular-google-map-container {
-    height: 100%;
-    width: 91.6%;
-    position: absolute;
+    height: 400px;
 }
 .comoUsar>div{
 	background: #3B3E40;
