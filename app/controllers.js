@@ -4,6 +4,20 @@
 
 var tuzobusController = angular.module('tuzobusController',[]);
 
+tuzobusController.controller('out',['$scope', function ($scope){
+  $scope.out =  function (){
+    navigator.app.exitApp();
+  };
+}]);
+
+tuzobusController.controller('main', ['$scope', function ($scope){
+  var h = ($(window).height()-52)/3;
+  $('.pachuca, .home a').css('height', h);
+  $('.home a').each(function (){
+    $(this).css('width',$(this).parent().width());
+  });
+}]);
+
 tuzobusController.controller('tbMenuCtrl',['$scope', '$http', function ($scope, $http){
 	
 	$scope.items = [];
@@ -123,6 +137,13 @@ tuzobusController.controller('tbEstaciones',['$scope', 'Estaciones', function ($
 
 tuzobusController.controller('tbServicios',['$scope', 'Servicios', function ($scope, Servicios){
   $scope.servicios = Servicios.query();
+  setTimeout( function(){
+    var h = ($(window).height() - $('.servicios').offset().top - $('.servicios h1').height() - 20) / 3;
+    $('.servicios a').css('height', h).find('img').each(function (){
+      $(this).css('margin-top', (h-$(this).height())/4).css('margin-bottom', (h-$(this).height())/4);
+    });
+    console.log(h)
+  }, 100);
 }]);
 
 tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios', function ($scope, $routeParams, Servicios){

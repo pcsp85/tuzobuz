@@ -15,6 +15,7 @@ tuzobusApp.config(['$routeProvider',
 		$routeProvider
 		.when('/',{
 			templateUrl: 'views/index.html',
+			controller: 'main',
 		})
 		.when('/mapa',{
 			templateUrl: 'views/mapa.html',
@@ -56,6 +57,9 @@ tuzobusApp.config(['$routeProvider',
 		})
 		.when('/perfil', {
 			templateUrl: 'views/perfil.html',
+		})
+		.when('/creditos', {
+			templateUrl: 'views/creditos.html',
 		})
 		.otherwise({
 			redirectTo: '/'

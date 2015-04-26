@@ -84,6 +84,8 @@ body{
 .home a{
 	color: #fff;
 	font-family: 'Comfortaa-Bold', sans-serif;
+	display: table-cell;
+	vertical-align: middle;
 }
 .home a img{
 	display: block;
@@ -157,14 +159,18 @@ body{
 	float: left;
 	width: 50%;
 	padding-top: 1em;
+	text-decoration: none !important;
 }
 .servicio:nth-child(2){
 	width: 100%;
 }
+.servicio:focus{
+	opacity: .8;
+}
 .servicio h2{
 	font-size: 1.2em;
 	padding: 0.3em;
-	margin-top: .7em;
+	margin-top: .8em;
 	margin-bottom: 0;
 	color: #fff;
 }
@@ -221,7 +227,7 @@ body{
 .angular-google-map-container {
     height: 400px;
 }
-.comoUsar>div{
+.comoUsar>div, .creditos{
 	background: #3B3E40;
 	padding-top: 1em;
 }

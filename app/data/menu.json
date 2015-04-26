@@ -43,5 +43,10 @@
 		"menu" : "Notificaciones",
 		"target" : "notificaciones",
 		"iconUrl" : "assets/img/menu_icons/notificaciones.png"
+	},
+	{
+		"menu" : "Creditos",
+		"target" : "creditos",
+		"iconUrl" : "assets/img/menu_icons/creditos.png"
 	}
 ]
