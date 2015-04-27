@@ -140,14 +140,23 @@ tuzobusController.controller('tbServicios',['$scope', 'Servicios', function ($sc
   setTimeout( function(){
     var h = ($(window).height() - $('.servicios').offset().top - $('.servicios h1').height() - 20) / 3;
     $('.servicios a').css('height', h).find('img').each(function (){
-      $(this).css('margin-top', (h-$(this).height())/4).css('margin-bottom', (h-$(this).height())/4);
+      var nh = (h-$(this).height()-$(this).next().height()-10)/2;
+      $(this).css('margin-top', nh).css('margin-bottom', nh);
     });
-    console.log(h)
   }, 100);
 }]);
 
 tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios', function ($scope, $routeParams, Servicios){
   $scope.servicio = Servicios.get({idServicio:$routeParams.idServicio});
+}]);
 
+tuzobusController.controller('tbAds',['$scope', 'Ads', function ($scope, Ads){
+  $scope.ads = Ads.query();
+
+  $scope.goAds = function (u){
+    if(u!=false){
+      //Funcion para abrir ventana y navegar al destino del anuncio
+    }
+  };
 
 }]);

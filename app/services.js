@@ -15,3 +15,9 @@ tuzobusServices.factory('Estaciones',['$resource', function ($resource){
 		query: {method:'GET', params:{idEstacion:'estaciones'}, isArray:true}
 	});
 }]);
+
+tuzobusServices.factory('Ads',['$resource', function ($resource){
+	return $resource('http://dominio.ext/tuzobusapp/v/ads', {}, {
+		query: {method: 'GET', params:{token:'pcsp85@gmail.com'}, isArray:true}
+	})
+}]);
