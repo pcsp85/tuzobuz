@@ -17,7 +17,10 @@ tuzobusServices.factory('Estaciones',['$resource', function ($resource){
 }]);
 
 tuzobusServices.factory('Ads',['$resource', function ($resource){
-	return $resource('http://dominio.ext/tuzobusapp/v/ads', {}, {
-		query: {method: 'GET', params:{token:'pcsp85@gmail.com'}, isArray:true}
-	})
+	return $resource('app/data/servicios/:idServicio.json', {}, {
+		query: {method:'GET', params:{idServicio:'servicios'}, isArray:true}
+	});
+//	return $resource('http://localhost/ApptestBe/v/', {}, {
+//		query: {method: 'GET', params:{action:'get_ads'}, isArray:true}
+//	})
 }]);

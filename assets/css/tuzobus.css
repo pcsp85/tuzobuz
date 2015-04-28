@@ -223,10 +223,19 @@ body{
 	width: 100%;
 	height: auto;
 }
+#cont_mapa{
+	width: 100%
+}
 .angular-google-map-container {
     height: 400px;
 }
 .comoUsar>div, .creditos{
 	background: #3B3E40;
 	padding-top: 1em;
+}
+.Ads{
+	margin-top: 1.5em;
+}
+.Ads>div>div{
+	background: #3B3E40;
 }

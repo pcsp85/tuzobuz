@@ -148,6 +148,9 @@ tuzobusController.controller('tbServicios',['$scope', 'Servicios', function ($sc
 
 tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios', function ($scope, $routeParams, Servicios){
   $scope.servicio = Servicios.get({idServicio:$routeParams.idServicio});
+  setTimeout(function (){
+    $('.servicio_mapa').panzoom();
+  }, 100);
 }]);
 
 tuzobusController.controller('tbAds',['$scope', 'Ads', function ($scope, Ads){

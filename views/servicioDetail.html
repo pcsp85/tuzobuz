@@ -1,6 +1,9 @@
 <div class="row servicioDetail">
   <div class="col-xs-12">
 	<h1><a href="#/servicios"> &lt;&lt; Servicios</a> <a href="#/mapa/servicio/{{servicio.id}}"> {{servicio.name}} <img src="assets/img/circle_mapa.png"></a></h1>
-		<img ng-src="{{servicio.mapa}}" class="servicio_mapa">
+		<div id="cont_mapa">
+			<img ng-src="{{servicio.mapa}}" class="servicio_mapa">
+		</div>
   </div>
 </div>
+<ng-include src="'views/ads.html'" ng-controller="tbAds"></ng-include>
