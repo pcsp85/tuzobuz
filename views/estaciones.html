@@ -4,7 +4,7 @@
 		<div class="icon">&nbsp;</div>
 		<div class="stage2">
 			<a href="#/mapa/estacion/{{estacion.id}}"><img src="assets/img/circle_mapa.png" class="st"></a>
-			<img ng-repeat="img in estacion.servicios" ng-src="assets/img/circle_bus_{{img}}.png" class="st">
+			<a ng-repeat="img in estacion.servicios" ng-href="#/servicios/{{img}}"><img  ng-src="assets/img/circle_bus_{{img}}.png" class="st"></a>
 		</div>
 		<div class="stage1">
 			<div ng-repeat="ser in estacion.servicios" class="ser {{ser}}">&nbsp;</div>

@@ -150,6 +150,7 @@ tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios'
   $scope.servicio = Servicios.get({idServicio:$routeParams.idServicio});
   setTimeout(function (){
     $('.servicio_mapa').panzoom();
+    $('.navmenu-default a[href="#/servicios"]').addClass('active').parent().siblings().children('a').removeClass('active');
   }, 100);
 }]);
 
