@@ -1,7 +1,7 @@
 {
 	"id": "villas_de_pachuca",
 	"name": "Villas de Pachuca",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0562101,
 	"longitude": -98.7866083,
 	"servicios":[

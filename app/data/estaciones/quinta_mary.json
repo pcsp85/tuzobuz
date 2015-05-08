@@ -1,7 +1,7 @@
 {
 	"id": "quinta_mary",
 	"name": "Quinta Mary",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.1162313,
 	"longitude": -98.7426219,
 	"servicios":[

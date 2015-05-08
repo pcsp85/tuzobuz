@@ -1,7 +1,7 @@
 {
 	"id": "esc_miguel_aleman",
 	"name": "Esc. Primaria Pdte. Miguel Alemán",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.12182,
 	"longitude": -98.7347493,
 	"servicios":[

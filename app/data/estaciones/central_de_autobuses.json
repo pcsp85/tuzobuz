@@ -1,7 +1,7 @@
 {
 	"id": "central_de_autobuses",
 	"name": "Central de autobuses",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.10665,
 	"longitude": -98.754167,
 	"servicios":[

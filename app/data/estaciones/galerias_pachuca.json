@@ -1,7 +1,7 @@
 {
 	"id": "galerias_pachuca",
 	"name": "Galerías Pachuca",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0943968,
 	"longitude": -98.7697399,
 	"servicios":[

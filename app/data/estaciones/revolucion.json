@@ -1,7 +1,7 @@
 {
 	"id": "revolucion",
 	"name": "Revolución",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.1185733,
 	"longitude": -98.7391947,
 	"servicios":[

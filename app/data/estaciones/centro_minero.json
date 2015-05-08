@@ -1,7 +1,7 @@
 {
 	"id": "centro_minero",
 	"name": "Centro Minero",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0907946,
 	"longitude": -98.7708959,
 	"servicios":[

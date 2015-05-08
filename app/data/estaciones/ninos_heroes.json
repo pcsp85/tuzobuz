@@ -1,7 +1,7 @@
 {
 	"id": "ninos_heroes",
 	"name": "Fuente Niños héroes",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.125224,
 	"longitude": -98.7328416,
 	"servicios":[

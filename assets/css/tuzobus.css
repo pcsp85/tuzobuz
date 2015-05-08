@@ -8,6 +8,10 @@ body{
 	background: #26282A;
 	overflow-x: hidden;
 }
+a:focus, a:hover{
+	text-decoration: none;
+	color: #a9c84a;
+}
 .navbar{
 	background: #9DCD5D;
 }
@@ -45,6 +49,7 @@ body{
 }
 .navbar-default .settings .dropdown-menu{
 	margin-top: 52px;
+	font-size: 1.25em;
 }
 .navmenu-default{
 	background: #1B1C1E;
@@ -76,8 +81,7 @@ body{
 	margin-bottom: 0;
 }
 .pachuca{
-	min-height: 180px;
-	background: url('../img/pachuca.png') no-repeat top center;
+	background: url('../img/pachuca.png') no-repeat bottom center;
 	background-size: cover;
 	margin-top: -20px;
 }
@@ -86,6 +90,9 @@ body{
 	font-family: 'Comfortaa-Bold', sans-serif;
 	display: table-cell;
 	vertical-align: middle;
+}
+.home>div:first-child{
+	background: #666666;
 }
 .home a img{
 	display: block;
@@ -108,6 +115,11 @@ body{
 .estaciones li.active .icon{
 	background: url('../img/estaciones_icons/back.png') no-repeat center, #3B3E40;
 	background-size: contain;
+}
+.estaciones li .icon img{
+	width: 70%;
+	height: auto;
+	margin: 15%;
 }
 .estaciones li .stage1{
 	width: 80%;
@@ -163,7 +175,7 @@ body{
 .servicio:nth-child(2){
 	width: 100%;
 }
-.servicio:focus{
+.servicio:focus, .servicio:hover{
 	opacity: .8;
 }
 .servicio h2{
@@ -214,6 +226,7 @@ body{
 	color: #fff;
 }
 .servicioDetail h1 a:first-child{
+	padding-top: 6px;
 	float: left;
 }
 .servicioDetail h1 a img{
@@ -229,9 +242,13 @@ body{
 .angular-google-map-container {
     height: 400px;
 }
-.comoUsar>div, .creditos{
+.comoUsar>div, .sobre{
 	background: #3B3E40;
 	padding-top: 1em;
+}
+.sobre h3{
+	font-size: 1.3em;
+	font-weight: bold;
 }
 .Ads{
 	margin-top: 1.5em;

@@ -1,7 +1,7 @@
 {
 	"id": "cecati",
 	"name": "CECATI",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.1031581,
 	"longitude": -98.7605992,
 	"servicios":[

@@ -1,7 +1,7 @@
 {
 	"id": "mercado_hidalgo",
 	"name": "Mercado Hidalgo",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.1292,
 	"longitude": -98.73132,
 	"servicios":[

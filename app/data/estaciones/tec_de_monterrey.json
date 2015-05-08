@@ -1,7 +1,7 @@
 {
 	"id": "tec_de_monterrey",
 	"name": "TEC de Monterrey",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0981557,
 	"longitude": -98.7658071,
 	"servicios":[

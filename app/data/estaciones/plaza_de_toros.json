@@ -1,7 +1,7 @@
 {
 	"id": "plaza_de_toros",
 	"name": "Plaza de Toros",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0641544,
 	"longitude": -98.7824214,
 	"servicios":[

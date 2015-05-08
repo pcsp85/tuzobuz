@@ -1,7 +1,7 @@
 {
 	"id": "juan_c_doria",
 	"name": "Juan C Doria",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0682838,
 	"longitude": -98.7802719,
 	"servicios":[

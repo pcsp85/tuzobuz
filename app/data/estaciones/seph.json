@@ -1,7 +1,7 @@
 {
 	"id": "seph",
 	"name": "SEPH",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0790738,
 	"longitude": -98.7746894,
 	"servicios":[

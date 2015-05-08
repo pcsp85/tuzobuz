@@ -1,6 +1,6 @@
 [
 	{
-		"menu" : "Mapa",
+		"menu" : "Mapa de ruta",
 		"target" : "mapa",
 		"iconUrl" : "assets/img/menu_icons/mapa.png"
 	},
@@ -15,14 +15,9 @@
 		"iconUrl" : "assets/img/menu_icons/servicios.png"
 	},
 	{
-		"menu" : "Horarios",
-		"target" : "horarios",
-		"iconUrl" : "assets/img/menu_icons/horarios.png"
-	},
-	{
-		"menu" : "¿Cómo usar Tuzobús?",
-		"target" : "comoUsar",
-		"iconUrl" : "assets/img/menu_icons/comoUsar.png"
+		"menu" : "¿Cómo llegar?",
+		"target" : "comoLlegar",
+		"iconUrl" : "assets/img/menu_icons/comoLlegar.png"
 	},
 	{
 		"menu" : "Estaciones cercanas",
@@ -35,18 +30,23 @@
 		"iconUrl" : "assets/img/menu_icons/rutasAlimentadoras.png"
 	},
 	{
-		"menu" : "¿Cómo llegar?",
-		"target" : "comoLlegar",
-		"iconUrl" : "assets/img/menu_icons/comoLlegar.png"
+		"menu" : "Horarios",
+		"target" : "horarios",
+		"iconUrl" : "assets/img/menu_icons/horarios.png"
 	},
 	{
-		"menu" : "Notificaciones",
-		"target" : "notificaciones",
+		"menu" : "¿Cómo usar Tuzobús App?",
+		"target" : "comoUsar",
+		"iconUrl" : "assets/img/menu_icons/comoUsar.png"
+	},
+	{
+		"menu" : "Calificar Tuzobús App",
+		"target" : "calificar",
 		"iconUrl" : "assets/img/menu_icons/notificaciones.png"
 	},
 	{
-		"menu" : "Creditos",
-		"target" : "creditos",
+		"menu" : "Sobre Tuzobús App",
+		"target" : "sobre",
 		"iconUrl" : "assets/img/menu_icons/creditos.png"
 	}
 ]

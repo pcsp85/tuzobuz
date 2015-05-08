@@ -52,14 +52,14 @@ tuzobusApp.config(['$routeProvider',
 		.when('/comoLlegar', {
 			templateUrl: 'views/comoLlegar.html',
 		})
-		.when('/notificaciones', {
-			templateUrl: 'views/notificaciones.html',
+		.when('/calificar', {
+			templateUrl: 'views/calificar.html',
 		})
 		.when('/perfil', {
 			templateUrl: 'views/perfil.html',
 		})
-		.when('/creditos', {
-			templateUrl: 'views/creditos.html',
+		.when('/sobre', {
+			templateUrl: 'views/sobre.html',
 		})
 		.otherwise({
 			redirectTo: '/'

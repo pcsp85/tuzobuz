@@ -1,7 +1,7 @@
 {
 	"id": "prepa_1",
 	"name": "Prepa 1",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.1147067,
 	"longitude": -98.748163,
 	"servicios":[

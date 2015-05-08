@@ -1,7 +1,7 @@
 {
 	"id": "real_de_toledo",
 	"name": "Real de Toledo",
-	"icon": "",
+	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0349814,
 	"longitude": -98.7992202,
 	"servicios":[
