@@ -148,9 +148,18 @@ tuzobusController.controller('tbServicios',['$scope', 'Servicios', function ($sc
 
 tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios', function ($scope, $routeParams, Servicios){
   $scope.servicio = Servicios.get({idServicio:$routeParams.idServicio});
-  setTimeout(function (){
-    $('.servicio_mapa').panzoom();
-    $('.navmenu-default a[href="#/servicios"]').addClass('active').parent().siblings().children('a').removeClass('active');
+    setTimeout(function (){
+      var h = ($(window).height() - $('.servicioDetail').offset().top - $('.servicios h1').height() - 50);
+      $('.servicio_mapa').append('<embed id="svg_mapa" src="assets/img/servicio_'+$routeParams.idServicio+'.svg" alt="svg image of a tiger" style="width: 100%; height: '+h+'px; border:1px solid black; "/>');
+      setTimeout(function(){
+        svgPanZoom('#svg_mapa', {
+          zoomEnabled: true,
+          controlIconsEnabled: true,
+          fit: true,
+          center: true
+        });
+      },100);
+      $('.navmenu-default a[href="#/servicios"]').addClass('active').parent().siblings().children('a').removeClass('active');
   }, 100);
 }]);
 
