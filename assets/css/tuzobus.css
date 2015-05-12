@@ -255,4 +255,12 @@ a:focus, a:hover{
 }
 .Ads>div>div{
 	background: #3B3E40;
+	cursor: pointer;
+	padding-top: .5em;
+	padding-bottom: 1em;
+	font-size: 1.2em;
+	 
+}
+.Ads img{
+	width: 100%;
 }

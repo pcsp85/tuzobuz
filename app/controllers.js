@@ -155,7 +155,7 @@ tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios'
     return $scope.servicio;
   }, function (nv, ov){
     if(nv !== ov){
-      $('.servicio_mapa').append('<embed id="svg_mapa" src="assets/img/servicio_'+$routeParams.idServicio+'.svg" alt="svg image of a tiger" style="width: 100%; height: '+$scope.h+'px; border:1px solid black; "/>');
+      $('.servicio_mapa').append('<embed id="svg_mapa" src="assets/img/servicio_'+$routeParams.idServicio+'.svg" alt="svg image of a tiger" style="width: 100%; height: '+$scope.h+'px; border:1px solid #3B3E40; "/>');
       setTimeout(function(){
         svgPanZoom('#svg_mapa', {
           zoomEnabled: true,
@@ -173,10 +173,8 @@ tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios'
 tuzobusController.controller('tbAds',['$scope', 'Ads', function ($scope, Ads){
   $scope.ads = Ads.query();
 
-  $scope.goAds = function (u){
-    if(u!=false){
-      //Funcion para abrir ventana y navegar al destino del anuncio
-    }
+  $scope.goAds = function (t){
+    console.log(t);
   };
 
 }]);
