@@ -1,6 +1,7 @@
 'use strict';
 
 /* Controllers */
+var remote_FD = 'http://localhost/ApptestBe/';
 
 var tuzobusController = angular.module('tuzobusController',[]);
 
@@ -10,12 +11,43 @@ tuzobusController.controller('out',['$scope', function ($scope){
   };
 }]);
 
-tuzobusController.controller('main', ['$scope', function ($scope){
+tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http){
   var h = ($(window).height()-52)/3;
   $('.pachuca, .home a').css('height', h);
   $('.home a').each(function (){
     $(this).css('width',$(this).parent().width());
   });
+  $http.get('app/data/activate.json').success(function (data){
+    if(data.activated=="NO"){
+      $http.get(remote_FD+'v/?action=activation_dates').success(function (data){
+        if(new Date() > new Date(data.begin_date) && new Date() < new Date(data.end_date)){
+          // Activar Formulario para ingresar código de validación
+          $('#activate_form').show();
+        }else if(new Date() > new Date(data.end_date)){
+          // Proceso de validación sin código
+        }
+      });
+    }
+  });
+  $scope.activateApp = function (){
+    console.log('activate');
+    $('#activate_code').parent().find('.alert-box').detach();
+    if(!$('#activate_code').val()){
+      alert('¡Debes propocionar el código de activación!');
+    }else{
+      var code = $('#activate_code').val();
+      var dev = device.model;
+      var con = navigator.connection.type;
+      $http.get(remote_FD+'v/?action=activate_App&code='+code+'&device='+dev+'&conection='+con).success(function (data){
+        if(data.result=='error'){
+          $('#activate_code').after('<div class="alert alert-box">'+data.message+'</div>');
+        }else if(data.result=='success'){
+
+        }
+      });
+
+    }
+  };
 }]);
 
 tuzobusController.controller('tbMenuCtrl',['$scope', '$http', function ($scope, $http){
