@@ -1,7 +1,7 @@
 'use strict';
 
 /* Controllers */
-var remote_FD = 'http://localhost/ApptestBe/';
+var remote_FD = 'http://192.168.0.106/ApptestBe/';
 
 var tuzobusController = angular.module('tuzobusController',[]);
 
@@ -36,10 +36,10 @@ tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http
       $('#activate_code').parent().parent().after('<div class="alert alert-warning">¡Debes ingresar el código de tu invitación!</div>');
     }else{
       var code = $('#activate_code').val();
-//      var dev = device.uuid;
-//      var con = navigator.connection.type;
-      var dev = 'device.model';
-      var con = 'navigator.connection.type';
+      var dev = device.uuid;
+      var con = navigator.connection.type;
+//      var dev = 'device.uuid';
+//      var con = 'navigator.connection.type';
       $http.get(remote_FD+'v/?action=activate_App&code='+code+'&device='+dev+'&conection='+con).success(function (data){
         if(data.result=='error'){
           $('#activate_code').parent().parent().after('<div class="alert alert-warning">'+data.message+'</div>');
@@ -222,10 +222,10 @@ tuzobusController.controller('tbRank',['$scope', '$http', function ($scope, $htt
     $('.calificar_no').slideUp('slow').find('textarea').val('');
   };
   $scope.rank = function(){
-    //var so = device.platform;
-    var so = 'iOS'; 
+    var so = device.platform;
+    //var so = 'iOS'; 
     $http.get(remote_FD+'v/?action=store_info&so='+so).success(function (data){
-      window.open(data.rank);
+      window.open(data.rank, '_system');
     });
   };
   $scope.coments = function(){
@@ -246,11 +246,17 @@ tuzobusController.controller('tbRank',['$scope', '$http', function ($scope, $htt
   };
 }]);
 
-tuzobusController.controller('tbAds',['$scope', 'Ads', function ($scope, Ads){
+tuzobusController.controller('tbAds',['$scope', '$http', 'Ads', function ($scope, $http, Ads){
   $scope.ads = Ads.query();
 
   $scope.goAds = function (t){
-    console.log(t);
+    var dev = device.uuid;
+    //var dev = 'device.uuid';
+    $http.get(remote_FD+'v/?action=go_ad&id_ad='+t+'&device='+dev).success(function (data){
+      if(data.result=='success'){
+        window.open(data.href, '_system');
+      }
+    });
   };
 
 }]);
