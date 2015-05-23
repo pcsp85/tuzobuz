@@ -1,0 +1,25 @@
+<div class="calificar">
+	<h1>¿Amaste Tuzobús App?</h1>
+	<div class="text-center">
+		<div class="col-xs-6"><button class="btn bnt-lg btn-default col-xs-12" ng-click="calificar('si');"><img src="assets/img/calificar_si.png"> SI</button></div>
+		<div class="col-xs-6"><button class="btn bnt-lg btn-default col-xs-12" ng-click="calificar('no');"><img src="assets/img/calificar_no.png"> NO</button></div>
+		<div class="col-xs-12 calificar_si text-center">
+			<p>¡Gracias!<br>Nos hace felices que te guste Tuzobús App. Sería realmente de mucha ayuda si nos calificas.</p>
+			<p>Muchas gracias por darte el tiempo.</p>
+			<button class="btn btn-lg success col-xs-12" ng-click="rank()">Calificar Tuzobús App</button>
+			<button class="btn btn-lg col-xs-12" ng-click="cancel()">En otro momento</button>
+		</div>
+		<div class="col-xs-12 calificar_no text-center">
+			<p>¿Qué podemos hacer para mejorar tu experiencia en Tuzobús App?</p>
+			<p>Apreciamos tus comentarios.</p>
+			<div class="input-group col-xs-12">
+				<span class="input-group-addon">@</span>
+				<input type="email" class="form-control" placeholder="Tu email">
+			</div>
+			<textarea class="col-xs-12" placeholder="Tus comentarios"></textarea>
+			<button class="btn btn-lg col-xs-6" ng-click="coments()">Enviar</button>
+			<button class="btn btn-lg col-xs-6" ng-click="cancel()">Cancelar</button>
+		</div>
+		<div style="clear:both;">&nbsp;</div>
+	</div>
+</div>

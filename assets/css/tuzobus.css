@@ -99,15 +99,23 @@ a:focus, a:hover{
 	margin: 1em auto .5em;
 }
 #activate_form{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: #3B3E40;
 	z-index: 10000;
-	padding-top: 33%;
 	display: none;
+}
+#activate_form .pachuca{
+	margin-bottom: 1.5em;
+}
+#activate_form img{
+	width: 5em;
+}
+#activate_form h1{
+	margin-bottom: 1em;
 }
 .estaciones{
 	list-style: none;
@@ -253,7 +261,7 @@ a:focus, a:hover{
 .angular-google-map-container {
     height: 400px;
 }
-.comoUsar>div, .sobre{
+.comoUsar>div, .sobre, .calificar>div{
 	background: #3B3E40;
 	padding-top: 1em;
 }
@@ -274,4 +282,30 @@ a:focus, a:hover{
 }
 .Ads img{
 	width: 100%;
+}
+.btn.success{
+	background: #B1C755;
+}
+.calificar_si, .calificar_no{
+	display: none;
+	background: #E8E8E8;
+	margin-top: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em ;
+	color: #414141;
+	font-weight: 900;
+	border-radius: .3em;
+}
+.calificar_no input[type=email]{
+	background: #414141;
+	border: 0;
+	color: #fff;
+}
+.calificar_no textarea{
+	background: #414141;
+	height: 11em;
+	border: 0;
+	border-radius: .3em;
+	padding: 1em;
+	color: #fff;
 }

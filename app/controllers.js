@@ -17,32 +17,38 @@ tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http
   $('.home a').each(function (){
     $(this).css('width',$(this).parent().width());
   });
-  $http.get('app/data/activate.json').success(function (data){
-    if(data.activated=="NO"){
-      $http.get(remote_FD+'v/?action=activation_dates').success(function (data){
-        if(new Date() > new Date(data.begin_date) && new Date() < new Date(data.end_date)){
-          // Activar Formulario para ingresar código de validación
-          $('#activate_form').show();
-        }else if(new Date() > new Date(data.end_date)){
-          // Proceso de validación sin código
-        }
-      });
-    }
-  });
+
+  if(!localStorage.TuzobusApp_activated || localStorage.TuzobusApp_activated == "NO"){
+    $http.get(remote_FD+'v/?action=activation_dates').success(function (data){
+      if(new Date() > new Date(data.begin_date) && new Date() < new Date(data.end_date)){
+        // Activa Formulario para ingresar código de validación
+        $('#activate_form').slideDown('slow');
+      }else if(new Date() > new Date(data.end_date)){
+        // Validación sin código
+        localStorage.TuzobusApp_activated = "YES";
+      }
+    });
+  }
+
   $scope.activateApp = function (){
-    console.log('activate');
-    $('#activate_code').parent().find('.alert-box').detach();
+    $('#activate_code').parent().parent().parent().find('.alert').detach();
     if(!$('#activate_code').val()){
-      alert('¡Debes propocionar el código de activación!');
+      $('#activate_code').parent().parent().after('<div class="alert alert-warning">¡Debes ingresar el código de tu invitación!</div>');
     }else{
       var code = $('#activate_code').val();
-      var dev = device.model;
-      var con = navigator.connection.type;
+//      var dev = device.uuid;
+//      var con = navigator.connection.type;
+      var dev = 'device.model';
+      var con = 'navigator.connection.type';
       $http.get(remote_FD+'v/?action=activate_App&code='+code+'&device='+dev+'&conection='+con).success(function (data){
         if(data.result=='error'){
-          $('#activate_code').after('<div class="alert alert-box">'+data.message+'</div>');
+          $('#activate_code').parent().parent().after('<div class="alert alert-warning">'+data.message+'</div>');
         }else if(data.result=='success'){
-
+          $('#activate_code').parent().parent().after('<div class="alert alert-success">'+data.message+'</div>');
+          localStorage.TuzobusApp_activated = "YES";
+          setTimeout(function (){
+            $('#activate_form').slideUp('slow');
+          }, 1500);
         }
       });
 
@@ -200,6 +206,44 @@ tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios'
       $('.navmenu-default a[href="#/servicios"]').addClass('active').parent().siblings().children('a').removeClass('active');
     }
   }, true);
+}]);
+
+tuzobusController.controller('tbRank',['$scope', '$http', function ($scope, $http){
+  $scope.calificar = function (r){
+    if(r=='si'){
+      $('.calificar_si').slideDown('slow').next().slideUp('slow');
+    }
+    if(r=='no'){
+      $('.calificar_no').slideDown('slow').prev().slideUp('slow');
+    }
+  };
+  $scope.cancel = function (){
+    $('.calificar_si').slideUp('slow');
+    $('.calificar_no').slideUp('slow').find('textarea').val('');
+  };
+  $scope.rank = function(){
+    //var so = device.platform;
+    var so = 'iOS'; 
+    $http.get(remote_FD+'v/?action=store_info&so='+so).success(function (data){
+      window.open(data.rank);
+    });
+  };
+  $scope.coments = function(){
+    var coments = $('.calificar_no textarea').val();
+    var email = $('.calificar_no input[type=email]').val();
+    $('.calificar_no .alert').detach(); 
+    if(!coments || coments==''){
+      $('.calificar_no').prepend('<div class="alert alert-warning">El campo de comentarios es obligatorio</div>');
+    }else{
+      $http.post(remote_FD+'v/',{action:"coments", coments:coments, email:email}).success(function(data){
+        if(data.result=="error"){
+          $('.calificar_no').prepend('<div class="alert alert-warning">'+data.message+'</div>');
+        }else if(data.result=="success"){
+          $('.calificar_no').prepend('<div class="alert alert-success">'+data.message+'</div>');
+        }
+      });
+    }
+  };
 }]);
 
 tuzobusController.controller('tbAds',['$scope', 'Ads', function ($scope, Ads){

@@ -54,6 +54,7 @@ tuzobusApp.config(['$routeProvider',
 		})
 		.when('/calificar', {
 			templateUrl: 'views/calificar.html',
+			controller: 'tbRank',
 		})
 		.when('/perfil', {
 			templateUrl: 'views/perfil.html',

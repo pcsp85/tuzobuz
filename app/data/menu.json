@@ -42,7 +42,7 @@
 	{
 		"menu" : "Calificar Tuzobús App",
 		"target" : "calificar",
-		"iconUrl" : "assets/img/menu_icons/notificaciones.png"
+		"iconUrl" : "assets/img/menu_icons/calificar.png"
 	},
 	{
 		"menu" : "Sobre Tuzobús App",
