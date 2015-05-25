@@ -1,7 +1,7 @@
 'use strict';
 
 /* Controllers */
-var remote_FD = 'http://192.168.0.106/ApptestBe/';
+var remote_FD = 'http://www.vivamexico.co.nz/tuzobusApp/';
 
 var tuzobusController = angular.module('tuzobusController',[]);
 
@@ -36,7 +36,7 @@ tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http
       $('#activate_code').parent().parent().after('<div class="alert alert-warning">¡Debes ingresar el código de tu invitación!</div>');
     }else{
       var code = $('#activate_code').val();
-      var dev = device.uuid;
+      var dev = window.device.uuid;
       var con = navigator.connection.type;
 //      var dev = 'device.uuid';
 //      var con = 'navigator.connection.type';
@@ -222,10 +222,11 @@ tuzobusController.controller('tbRank',['$scope', '$http', function ($scope, $htt
     $('.calificar_no').slideUp('slow').find('textarea').val('');
   };
   $scope.rank = function(){
-    var so = device.platform;
+    var so = window.device.platform;
     //var so = 'iOS'; 
     $http.get(remote_FD+'v/?action=store_info&so='+so).success(function (data){
-      window.open(data.rank, '_system');
+      $('.calificar_si').slideUp('slow');
+      window.open(encodeURI(data.rank), '_system');
     });
   };
   $scope.coments = function(){
@@ -250,11 +251,10 @@ tuzobusController.controller('tbAds',['$scope', '$http', 'Ads', function ($scope
   $scope.ads = Ads.query();
 
   $scope.goAds = function (t){
-    var dev = device.uuid;
-    //var dev = 'device.uuid';
+    var dev = window.device.uuid;
     $http.get(remote_FD+'v/?action=go_ad&id_ad='+t+'&device='+dev).success(function (data){
       if(data.result=='success'){
-        window.open(data.href, '_system');
+        window.open(encodeURI(data.href), '_system');
       }
     });
   };
