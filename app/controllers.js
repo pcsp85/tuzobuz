@@ -1,8 +1,8 @@
 'use strict';
 
 /* Controllers */
-//var remote_FD = 'http://www.vivamexico.co.nz/tuzobusApp/';
-var remote_FD = 'http://localhost/ApptestBe/';
+var remote_FD = 'http://www.vivamexico.co.nz/tuzobusApp/';
+//var remote_FD = 'http://localhost/ApptestBe/';
 
 var tuzobusController = angular.module('tuzobusController',[]);
 

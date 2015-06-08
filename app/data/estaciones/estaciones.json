@@ -1,7 +1,7 @@
 [
 	{
-		"id": "tellez",
-		"name": "Tellez",
+		"id": "terminal",
+		"name": "terminal / Patio Tellez",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0094155,
 		"longitude": -98.8032707,
@@ -9,8 +9,8 @@
 			"t01"		]
 	},
 	{
-		"id": "las_flores",
-		"name": "Las flores",
+		"id": "gabriel_mancera",
+		"name": "Gabriel Mancera",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0246387,
 		"longitude": -98.8088192,
@@ -18,8 +18,8 @@
 			"t01"		]
 	},
 	{
-		"id": "santa_matilde",
-		"name": "Santa Matilde",
+		"id": "matilde",
+		"name": "Matilde",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0311184,
 		"longitude": -98.8026363,
@@ -31,8 +31,8 @@
 		]
 	},
 	{
-		"id": "real_de_toledo",
-		"name": "Real de Toledo",
+		"id": "efren_rebolledo",
+		"name": "Efrén Rebolledo",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0349814,
 		"longitude": -98.7992202,
@@ -43,8 +43,8 @@
 		]
 	},
 	{
-		"id": "casa_de_la_3ra_edad",
-		"name": "Casa de la 3ra edad",
+		"id": "tercera_edad",
+		"name": "Tercera edad",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0422091,
 		"longitude": -98.7940643,
@@ -55,8 +55,8 @@
 		]
 	},
 	{
-		"id": "los_angeles",
-		"name": "Los ángeles",
+		"id": "san_antonio",
+		"name": "San Antonio",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.047077,
 		"longitude": -98.7913214,
@@ -67,8 +67,8 @@
 		]
 	},
 	{
-		"id": "plaza_san_antonio",
-		"name": "Plaza San Antonio",
+		"id": "ejercito_mexicano",
+		"name": "Ejercito Mexicano",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0503685,
 		"longitude": -98.7895922,
@@ -79,8 +79,8 @@
 		]
 	},
 	{
-		"id": "villas_de_pachuca",
-		"name": "Villas de Pachuca",
+		"id": "felipe_angeles",
+		"name": "Felipe Ángeles",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0562101,
 		"longitude": -98.7866083,
@@ -93,8 +93,8 @@
 		]
 	},
 	{
-		"id": "sector_primario",
-		"name": "Sector Primario",
+		"id": "centro_de_justicia",
+		"name": "Centro de Justicia",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0600413,
 		"longitude": -98.7845797,
@@ -105,8 +105,8 @@
 		]
 	},
 	{
-		"id": "plaza_de_toros",
-		"name": "Plaza de Toros",
+		"id": "vicente_segura",
+		"name": "Vicente Segura",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0641544,
 		"longitude": -98.7824214,
@@ -120,7 +120,7 @@
 	},
 	{
 		"id": "juan_c_doria",
-		"name": "Juan C Doria",
+		"name": "Juan C. Doria",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0682838,
 		"longitude": -98.7802719,
@@ -155,8 +155,8 @@
 		]
 	},
 	{
-		"id": "tec_de_pachuca",
-		"name": "Tec. de Pachuca",
+		"id": "tecnologico",
+		"name": "Tecnológico",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0833382,
 		"longitude": -98.7727024,
@@ -167,8 +167,8 @@
 		]
 	},
 	{
-		"id": "plaza_bicentenario",
-		"name": "Plaza Bicentenario",
+		"id": "bicentenario",
+		"name": "Bicentenario",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0882647,
 		"longitude": -98.7710541,
@@ -193,8 +193,8 @@
 		]
 	},
 	{
-		"id": "galerias_pachuca",
-		"name": "Galerías Pachuca",
+		"id": "zona_plateada",
+		"name": "Zona Plateada",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0943968,
 		"longitude": -98.7697399,
@@ -206,7 +206,7 @@
 	},
 	{
 		"id": "tec_de_monterrey",
-		"name": "TEC de Monterrey",
+		"name": "Tec de Monterrey",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0981557,
 		"longitude": -98.7658071,
@@ -219,8 +219,8 @@
 		]
 	},
 	{
-		"id": "cecati",
-		"name": "CECATI",
+		"id": "central_de_autobuses",
+		"name": "Central de Autobuses",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.1031581,
 		"longitude": -98.7605992,
@@ -233,8 +233,8 @@
 		]
 	},
 	{
-		"id": "central_de_autobuses",
-		"name": "Central de autobuses",
+		"id": "cuna_del_futbol",
+		"name": "Cuna del Futbol",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.10665,
 		"longitude": -98.754167,
@@ -244,19 +244,8 @@
 		]
 	},
 	{
-		"id": "poliforum",
-		"name": "Poliforum",
-		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.1086255,
-		"longitude": -98.7549951,
-		"servicios":[
-			"t01",
-			"t03",
-			"t04"		]
-	},
-	{
-		"id": "sec_gral_2",
-		"name": "Sec. Gral. No. 2",
+		"id": "santa_julia",
+		"name": "Santa Julia",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.1125438,
 		"longitude": -98.7509054,
@@ -280,8 +269,18 @@
 		]
 	},
 	{
-		"id": "quinta_mary",
-		"name": "Quinta Mary",
+		"id": "revolucion",
+		"name": "Revolución",
+		"icon": "assets/img/estaciones_icons/bus_w.png",
+		"latitude" : 20.1185733,
+		"longitude": -98.7391947,
+		"servicios":[
+			"t01",
+			"t04"		]
+	},
+	{
+		"id": "bioparque",
+		"name": "Bioparque",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.1162313,
 		"longitude": -98.7426219,
@@ -293,18 +292,7 @@
 		]
 	},
 	{
-		"id": "revolucion",
-		"name": "Revolución",
-		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.1185733,
-		"longitude": -98.7391947,
-		"servicios":[
-			"t01",
-			"t04"		]
-	},
-	{
-		"id": "esc_miguel_aleman",
-		"name": "Esc. Primaria Pdte. Miguel Alemán",
+		"id": "manuel_dublan",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.12182,
 		"longitude": -98.7347493,
@@ -314,6 +302,16 @@
 			"t03",
 			"t04"
 		]
+	},
+	{
+		"id": "presidente_aleman",
+		"name": "Presidente Alemán",
+		"icon": "assets/img/estaciones_icons/bus_w.png",
+		"latitude" : 20.1292,
+		"longitude": -98.73132,
+		"servicios":[
+			"t01",
+			"t02"		]
 	},
 	{
 		"id": "ninos_heroes",
@@ -326,18 +324,8 @@
 			"t02"		]
 	},
 	{
-		"id": "mercado_hidalgo",
-		"name": "Mercado Hidalgo",
-		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.1292,
-		"longitude": -98.73132,
-		"servicios":[
-			"t01",
-			"t02"		]
-	},
-	{
-		"id": "plaza_juarez",
-		"name": "Plaza Juárez",
+		"id": "centro_historico",
+		"name": "Centro Histórico",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.1226926,
 		"longitude": -98.7370367,
@@ -355,18 +343,6 @@
 		"longitude": -98.7402719,
 		"servicios":[
 			"t01",
-			"t04"		]
-	},
-	{
-		"id": "parque_de_convivencia",
-		"name": "Parque de convivencia",
-		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.11711,
-		"longitude": -98.74488,
-		"servicios":[
-			"t01",
-			"t02",
-			"t03",
 			"t04"		]
 	}
 ]
