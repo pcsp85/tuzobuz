@@ -39,12 +39,14 @@ tuzobusApp.config(['$routeProvider',
 		})
 		.when('/horarios', {
 			templateUrl: 'views/horarios.html',
+			controller: 'tbHorarios',
 		})
 		.when('/comoUsar', {
 			templateUrl: 'views/comoUsar.html',
 		})
 		.when('/estacionesCercanas', {
 			templateUrl: 'views/estacionesCercanas.html',
+			controller: 'tbEstacionesCercanas',
 		})
 		.when('/rutasAlimentadoras', {
 			templateUrl: 'views/rutasAlimentadoras.html',

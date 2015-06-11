@@ -1,8 +1,8 @@
 'use strict';
 
 /* Controllers */
-var remote_FD = 'http://www.vivamexico.co.nz/tuzobusApp/';
-//var remote_FD = 'http://localhost/ApptestBe/';
+//var remote_FD = 'http://www.vivamexico.co.nz/tuzobusApp/';
+var remote_FD = 'http://localhost/ApptestBe/';
 
 var tuzobusController = angular.module('tuzobusController',[]);
 
@@ -259,5 +259,26 @@ tuzobusController.controller('tbAds',['$scope', '$http', 'Ads', function ($scope
       }
     });
   };
+
+}]);
+
+tuzobusController.controller('tbHorarios',['$scope', '$http', function ($scope, $http){
+  $http.get(remote_FD+'v/?action=get_horarios').success(function (data){
+    $scope.horarios = data;
+  });
+}]);
+
+tuzobusController.controller('tbEstacionesCercanas', ['$scope', '$http', 'Estaciones', function ($scope, $http, Estaciones){
+  $scope.position = navigator.geolocation.watchPosition(posSuccess, posError, {timeout: 3000});
+  $scope.estaciones = Estaciones.query();
+
+  function posSuccess (position){
+    $('#locationStatus').removeClass('alert-warning').addClass('alert-success').html('OK');
+  }
+
+  function posError (error){
+    $('#locationStatus').removeClass('alert-success').addClass('alert-warning').html('ERROR');
+    alert('Error: '+ error.code + '\n' + 'Mensaje: '+ error.message + '\n');
+  }
 
 }]);

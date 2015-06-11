@@ -21,3 +21,9 @@ tuzobusServices.factory('Ads',['$resource', function ($resource){
 		query: {method: 'POST', params:{action:'get_ads'}, isArray:true}
 	})
 }]);
+
+tuzobusServices.factory('Horarios', ['$resource', function ($resource){
+	return $resource(remote_FD+'v/',{}, {
+		query: {method:'GET', params:{action:'get_horarios'}, isArray:true}
+	})
+}]);

@@ -15,9 +15,19 @@
 		"iconUrl" : "assets/img/menu_icons/servicios.png"
 	},
 	{
+		"menu" : "¿Cómo llegar?",
+		"target" : "comoLlegar",
+		"iconUrl" : "assets/img/menu_icons/comoLlegar.png"
+	},
+	{
 		"menu" : "Estaciones cercanas",
 		"target" : "estacionesCercanas",
 		"iconUrl" : "assets/img/menu_icons/estacionesCercanas.png"
+	},
+	{
+		"menu" : "Rutas alimentadoras",
+		"target" : "rutasAlimentadoras",
+		"iconUrl" : "assets/img/menu_icons/rutasAlimentadoras.png"
 	},
 	{
 		"menu" : "Horarios",
