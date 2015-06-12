@@ -268,12 +268,25 @@ tuzobusController.controller('tbHorarios',['$scope', '$http', function ($scope, 
   });
 }]);
 
-tuzobusController.controller('tbEstacionesCercanas', ['$scope', '$http', 'Estaciones', function ($scope, $http, Estaciones){
+tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 'Estaciones', function ($scope, filterFilter, Estaciones){
   $scope.position = navigator.geolocation.watchPosition(posSuccess, posError, {timeout: 3000});
-  $scope.estaciones = Estaciones.query();
 
   function posSuccess (position){
-    $('#locationStatus').removeClass('alert-warning').addClass('alert-success').html('OK');
+    var search = {
+      'latitude': position.coords.latitude,
+      'longitude': position.coords.longitude
+    }
+    var presition = 1.05;
+    var estaciones = [];
+    var la_ls = parseFloat(search.latitude) + presition, la_li = parseFloat(search.latitude) - presition;
+    var lo_ls = parseFloat(search.longitude) + presition, lo_li = parseFloat(search.longitude) - presition;
+    Estaciones.query().$promise.then(function (data){
+      $(data).each(function(i,e){
+        if(e.latitude>= la_li && e.latitude<=la_ls && e.longitude>=lo_li && e.longitude<=lo_ls) estaciones.push(e);
+      });
+    });
+    $scope.estaciones = estaciones;
+    $('#locationStatus').removeClass('alert-warning').addClass('alert-success').html('OK latitude:'+search.latitude+' longitude:'+search.longitude);
   }
 
   function posError (error){

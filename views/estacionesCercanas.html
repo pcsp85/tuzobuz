@@ -1,5 +1,6 @@
 <div id="locationStatus"></div>
-{{position.coords.latitude}}
-{{position.coords.longitude}}
-
+<div ng-repeat="est in estaciones">
+	{{est.latitude}}<br>
+	{{est.longitude}}
+</div>
 <ng-include src="'views/ads.html'" ng-controller="tbAds"></ng-include>
