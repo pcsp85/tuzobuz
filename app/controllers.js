@@ -277,7 +277,7 @@ tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 
       'latitude': position.coords.latitude,
       'longitude': position.coords.longitude
     }
-    //var presition = 0.0025;
+    //var presition = 0.003;
     var presition = 1.004;
     var estaciones = [];
     var la_ls = parseFloat(search.latitude) + presition, la_li = parseFloat(search.latitude) - presition;
@@ -293,8 +293,7 @@ tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 
   }
 
   function posError (error){
-    location.reload(true);
-    //$('#locationStatus').removeClass('hide').addClass('alert-warning').html('<strong>ERROR</strong><br>No pudimos detectar tu pocición<br><div class="text-center"><button class="btn btn-primary" onclick="location.reload(true);">Volver a intentar</button></div>');
+    $('#locationStatus').removeClass('hide').addClass('alert-warning').html('<strong>ERROR</strong><br>No pudimos detectar tu pocición<br><div class="text-center"><button class="btn btn-primary" onclick="location.reload(true);">Volver a intentar</button></div>');
     //alert('Error: '+ error.code + '\n' + 'Mensaje: '+ error.message + '\n');
   }
 
