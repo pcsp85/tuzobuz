@@ -1,9 +1,9 @@
 {
-	"id": "quinta_mary",
-	"name": "Quinta Mary",
+	"id": "manuel_dublan",
+	"name": "Manuel Dublán",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
-	"latitude" : 20.1162313,
-	"longitude": -98.7426219,
+	"latitude" : 20.12182,
+	"longitude": -98.7347493,
 	"servicios":[
 		"t01",
 		"t02",

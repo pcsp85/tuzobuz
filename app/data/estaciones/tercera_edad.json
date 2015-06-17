@@ -1,6 +1,6 @@
 {
-	"id": "casa_de_la_3ra_edad",
-	"name": "Casa de la 3ra edad",
+	"id": "tercera_edad",
+	"name": "Tercera edad",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0422091,
 	"longitude": -98.7940643,

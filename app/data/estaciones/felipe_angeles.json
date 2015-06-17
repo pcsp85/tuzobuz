@@ -1,9 +1,9 @@
 {
-	"id": "plaza_bicentenario",
-	"name": "Plaza Bicentenario",
+	"id": "felipe_angeles",
+	"name": "Felipe Ángeles",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
-	"latitude" : 20.0882647,
-	"longitude": -98.7710541,
+	"latitude" : 20.0562101,
+	"longitude": -98.7866083,
 	"servicios":[
 		"t01",
 		"t02",

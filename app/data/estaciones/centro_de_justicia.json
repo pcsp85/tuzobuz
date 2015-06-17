@@ -1,6 +1,6 @@
 {
-	"id": "sector_primario",
-	"name": "Sector Primario",
+	"id": "centro_de_justicia",
+	"name": "Centro de Justicia",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.0600413,
 	"longitude": -98.7845797,

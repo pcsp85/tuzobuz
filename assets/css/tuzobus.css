@@ -325,3 +325,45 @@ a:focus, a:hover{
 	margin-bottom: 1em;
 	font-size: 1.1em;
 }
+
+.estCercanas ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.estCercanas ul li img{
+	width: 35px;
+}
+.estCercanas ul li.t01{
+	background: #9DCD5D;
+}
+.estCercanas ul li.t02{
+	background: #EACB3F;
+}
+.estCercanas ul li.t03{
+	background: #2EB8E5;
+}
+.estCercanas ul li.t04{
+	background: #6A2777;
+}
+.estCercanas ul li.t05{
+	background: #F08E2E;
+}
+.estCercanas>div .icon{
+	float: left;
+	background: url('../img/estaciones_icons/back_cercana.png') top center;
+	height: 96px;
+	width: 80px;
+	padding-top: 10px;
+	margin-top: -10px;
+}
+.estCercanas>div h4{
+	padding-top: 1em;
+}
+.estCercanas>div a{
+	display: block;
+	clear: both;
+	margin-bottom: 1.5em;
+	color: #fff;
+	font-weight: 900;
+}

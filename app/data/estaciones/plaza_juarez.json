@@ -2,11 +2,9 @@
 	"id": "plaza_juarez",
 	"name": "Plaza Juárez",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
-	"latitude" : 20.1226926,
-	"longitude": -98.7370367,
+	"latitude" : 20.1206532,
+	"longitude": -98.7402719,
 	"servicios":[
 		"t01",
-		"t02",
-		"t03",
 		"t04"		]
 }

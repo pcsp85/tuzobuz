@@ -1,7 +1,7 @@
 [
 	{
 		"id": "terminal",
-		"name": "terminal / Patio Tellez",
+		"name": "Terminal / Patio Tellez",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.0094155,
 		"longitude": -98.8032707,
@@ -279,20 +279,8 @@
 			"t04"		]
 	},
 	{
-		"id": "bioparque",
-		"name": "Bioparque",
-		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.1162313,
-		"longitude": -98.7426219,
-		"servicios":[
-			"t01",
-			"t02",
-			"t03",
-			"t04"
-		]
-	},
-	{
 		"id": "manuel_dublan",
+		"name": "Manuel Dublán",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
 		"latitude" : 20.12182,
 		"longitude": -98.7347493,
@@ -336,6 +324,16 @@
 			"t04"		]
 	},
 	{
+		"id": "plaza_juarez",
+		"name": "Plaza Juárez",
+		"icon": "assets/img/estaciones_icons/bus_w.png",
+		"latitude" : 20.1206532,
+		"longitude": -98.7402719,
+		"servicios":[
+			"t01",
+			"t04"		]
+	},
+	{
 		"id": "parque_del_maestro",
 		"name": "Parque del maestro",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
@@ -344,5 +342,18 @@
 		"servicios":[
 			"t01",
 			"t04"		]
+	},
+	{
+		"id": "bioparque",
+		"name": "Bioparque",
+		"icon": "assets/img/estaciones_icons/bus_w.png",
+		"latitude" : 20.1162313,
+		"longitude": -98.7426219,
+		"servicios":[
+			"t01",
+			"t02",
+			"t03",
+			"t04"
+		]
 	}
 ]

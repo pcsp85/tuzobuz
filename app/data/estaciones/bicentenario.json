@@ -1,9 +1,9 @@
 {
-	"id": "villas_de_pachuca",
-	"name": "Villas de Pachuca",
+	"id": "bicentenario",
+	"name": "Bicentenario",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
-	"latitude" : 20.0562101,
-	"longitude": -98.7866083,
+	"latitude" : 20.0882647,
+	"longitude": -98.7710541,
 	"servicios":[
 		"t01",
 		"t02",

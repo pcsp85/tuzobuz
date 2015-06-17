@@ -269,6 +269,7 @@ tuzobusController.controller('tbHorarios',['$scope', '$http', function ($scope, 
 }]);
 
 tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 'Estaciones', function ($scope, filterFilter, Estaciones){
+  navigator.geolocation.clearWatch($scope.position);
   $scope.position = navigator.geolocation.watchPosition(posSuccess, posError, {timeout: 3000});
 
   function posSuccess (position){
@@ -276,22 +277,39 @@ tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 
       'latitude': position.coords.latitude,
       'longitude': position.coords.longitude
     }
-    var presition = 1.05;
+    //var presition = 0.0025;
+    var presition = 1.004;
     var estaciones = [];
     var la_ls = parseFloat(search.latitude) + presition, la_li = parseFloat(search.latitude) - presition;
     var lo_ls = parseFloat(search.longitude) + presition, lo_li = parseFloat(search.longitude) - presition;
     Estaciones.query().$promise.then(function (data){
       $(data).each(function(i,e){
+        e.distancia = distancia(search,e);
         if(e.latitude>= la_li && e.latitude<=la_ls && e.longitude>=lo_li && e.longitude<=lo_ls) estaciones.push(e);
       });
     });
     $scope.estaciones = estaciones;
-    $('#locationStatus').removeClass('alert-warning').addClass('alert-success').html('OK latitude:'+search.latitude+' longitude:'+search.longitude);
+    $('#locationStatus').removeClass('alert-warning').addClass('hide').html('Posición OK <br> latitude:'+search.latitude+'<br> longitude:'+search.longitude);
   }
 
   function posError (error){
-    $('#locationStatus').removeClass('alert-success').addClass('alert-warning').html('ERROR');
-    alert('Error: '+ error.code + '\n' + 'Mensaje: '+ error.message + '\n');
+    location.reload(true);
+    //$('#locationStatus').removeClass('hide').addClass('alert-warning').html('<strong>ERROR</strong><br>No pudimos detectar tu pocición<br><div class="text-center"><button class="btn btn-primary" onclick="location.reload(true);">Volver a intentar</button></div>');
+    //alert('Error: '+ error.code + '\n' + 'Mensaje: '+ error.message + '\n');
+  }
+
+  function distancia(o,d){
+    var rad = function(x) {return x*Math.PI/180;}
+
+    var R     = 6378.137;
+    var dLat  = rad(d.latitude-o.latitude);
+    var dLong = rad(d.longitude-o.longitude);
+
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(rad(o.latitude)) * Math.cos(rad(d.latitude)) * Math.sin(dLong/2) * Math.sin(dLong/2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    var d = R * c;
+
+    return Math.round(d*1000) + ' m';
   }
 
 }]);
