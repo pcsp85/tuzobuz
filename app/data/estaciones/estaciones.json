@@ -272,8 +272,8 @@
 		"id": "revolucion",
 		"name": "Revolución",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.1185733,
-		"longitude": -98.7391947,
+		"latitude" : 20.116205,
+		"longitude": -98.742600,
 		"servicios":[
 			"t01",
 			"t04"		]
@@ -347,8 +347,8 @@
 		"id": "bioparque",
 		"name": "Bioparque",
 		"icon": "assets/img/estaciones_icons/bus_w.png",
-		"latitude" : 20.1162313,
-		"longitude": -98.7426219,
+		"latitude" : 20.11711,
+		"longitude": -98.74488,
 		"servicios":[
 			"t01",
 			"t02",

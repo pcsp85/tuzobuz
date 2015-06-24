@@ -1,6 +1,6 @@
 {
-	"id": "parque_de_convivencia",
-	"name": "Parque de convivencia",
+	"id": "bioparque",
+	"name": "Bioparque",
 	"icon": "assets/img/estaciones_icons/bus_w.png",
 	"latitude" : 20.11711,
 	"longitude": -98.74488,

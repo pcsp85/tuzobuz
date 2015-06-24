@@ -1,7 +1,7 @@
 /* Tuzobus Script */
 $(document).ready(function(){
 	$('body').swiperight(function(e){
-		console.log(e)
+		//console.log(e)
 		$('.navmenu-default').offcanvas('show');
 	});
 	$('body').swipeleft(function(){

@@ -27,6 +27,7 @@ tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http
       }else if(new Date() > new Date(data.end_date)){
         // Validación sin código
         localStorage.TuzobusApp_activated = "YES";
+        $('.nav.navmenu-nav a[href="#/comoUsar"]').click();
       }
     });
   }
@@ -48,7 +49,10 @@ tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http
           $('#activate_code').parent().parent().after('<div class="alert alert-success">'+data.message+'</div>');
           localStorage.TuzobusApp_activated = "YES";
           setTimeout(function (){
-            $('#activate_form').slideUp('slow');
+            $('#activate_form').slideUp('slow', function (){
+              $('.nav.navmenu-nav a[href="#/comoUsar"]').click();
+            });
+
           }, 1500);
         }
       });
