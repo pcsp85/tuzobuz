@@ -281,7 +281,7 @@ tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 
       'latitude': position.coords.latitude,
       'longitude': position.coords.longitude
     }
-    //var presition = 0.003;
+    //var presition = 0.0045;
     var presition = 1.004;
     var estaciones = [];
     var la_ls = parseFloat(search.latitude) + presition, la_li = parseFloat(search.latitude) - presition;
