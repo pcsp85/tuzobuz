@@ -5,13 +5,13 @@
 var remote_FD = 'http://localhost/ApptestBe/';
 
 var tuzobusController = angular.module('tuzobusController',[]);
-
+/*
 tuzobusController.controller('out',['$scope', function ($scope){
   $scope.out =  function (){
     navigator.app.exitApp();
   };
 }]);
-
+*/
 tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http){
   var h = ($(window).height()-52)/3;
   $('.pachuca, .home a').css('height', h);
@@ -71,6 +71,9 @@ tuzobusController.controller('tbMenuCtrl',['$scope', '$http', function ($scope, 
 	$scope.hide = function (){
 		$('.navmenu-default').offcanvas('hide');
 		$('.navmenu-default a[href="#/'+this.item.target+'"]').addClass('active').parent().siblings().children('a').removeClass('active');
+    if(this.item.target=='salir'){
+      navigator.app.exitApp();
+    }
 	};
 }]);
 

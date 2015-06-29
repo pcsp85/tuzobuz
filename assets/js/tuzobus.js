@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('body').swipeleft(function(){
 		$('.navmenu-default').offcanvas('hide');
 	});
+	document.addEventListener("menubutton", menuButton, false);
 });
 
 var est_toogle = function (o){
@@ -16,3 +17,11 @@ var est_toogle = function (o){
     	$(this).parent().removeClass('active');
     });
 };
+
+var menuButton = function (){
+	if($('.navmenu-default')=='none'){
+		$('.navmenu-default').offcanvas('show');
+	}else{
+		$('.navmenu-default').offcanvas('hide');
+	}
+}

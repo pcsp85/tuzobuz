@@ -38,5 +38,10 @@
 		"menu" : "Sobre Tuzobús App",
 		"target" : "sobre",
 		"iconUrl" : "assets/img/menu_icons/creditos.png"
+	},
+	{
+		"menu" : "Salir",
+		"target" : "salir",
+		"iconUrl" : "assets/img/menu_icons/salir.png"
 	}
 ]
