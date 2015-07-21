@@ -140,6 +140,7 @@ a:focus, a:hover{
 	width: 70%;
 	height: auto;
 	margin: 15%;
+	border-radius: 2em;
 }
 .estaciones li .stage1{
 	width: 80%;
@@ -155,20 +156,20 @@ a:focus, a:hover{
 	width: 20px;
 	height: 3px;
 }
-.ser.t01{
+.ser.troncal{
 	display: none;
 }
-.ser.t02{
-	background: #EACB3F;
+.ser.re_1{
+	background: #006633;
 }
-.ser.t03{
-	background: #2EB8E5;
+.ser.re_2{
+	background: #008c36;
 }
-.ser.t04{
-	background: #6A2777;
+.ser.re_3{
+	background: #dcdb00;
 }
-.ser.t05{
-	background: #F08E2E;
+.ser.re_4{
+	background: #f29000;
 }
 .estaciones li .stage2{
 	position: absolute;
@@ -206,34 +207,34 @@ a:focus, a:hover{
 	color: #fff;
 }
 
-.servicio.t01{
+.servicio.troncal{
 	background: #9DCD5D;
 }
-.servicio.t01 h2{
+.servicio.troncal h2{
 	background: #91B352;
 }
-.servicio.t02{
-	background: #EACB3F;
+.servicio.re_1{
+	background: #006633;
 }
-.servicio.t02 h2{
-	background: #D2B33A;
+.servicio.re_1 h2{
+	background: #009D4F;
 }
-.servicio.t03{
-	background: #2EB8E5;
+.servicio.re_2{
+	background: #008c36;
 }
-.servicio.t03 h2{
-	background: #24A7C6;
+.servicio.re_2 h2{
+	background: #006F29;
 }
-.servicio.t04{
-	background: #6A2777;
+.servicio.re_3{
+	background: #dcdb00;
 }
-.servicio.t04 h2{
-	background: #4A1B55;
+.servicio.re_3 h2{
+	background: #CECE00;
 }
-.servicio.t05{
-	background: #F08E2E;
+.servicio.re_4{
+	background: #f29000;
 }
-.servicio.t05 h2{
+.servicio.re_4 h2{
 	background: #D27D2E;
 }
 
@@ -339,20 +340,20 @@ a:focus, a:hover{
 .estCercanas ul li img{
 	width: 35px;
 }
-.estCercanas ul li.t01{
+.estCercanas ul li.troncal{
 	background: #9DCD5D;
 }
-.estCercanas ul li.t02{
-	background: #EACB3F;
+.estCercanas ul li.re_1{
+	background: #006633;
 }
-.estCercanas ul li.t03{
-	background: #2EB8E5;
+.estCercanas ul li.re_2{
+	background: #008c36;
 }
-.estCercanas ul li.t04{
-	background: #6A2777;
+.estCercanas ul li.re_3{
+	background: #dcdb00;
 }
-.estCercanas ul li.t05{
-	background: #F08E2E;
+.estCercanas ul li.re_4{
+	background: #f29000;
 }
 .estCercanas>div .icon{
 	float: left;
@@ -361,6 +362,12 @@ a:focus, a:hover{
 	width: 80px;
 	padding-top: 10px;
 	margin-top: -10px;
+}
+.estCercanas>div .icon img{
+	width: 70%;
+ 	border-radius: 2em;
+ 	margin: 7%;
+}
 }
 .estCercanas>div h4{
 	padding-top: 1em;

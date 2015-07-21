@@ -201,7 +201,7 @@ tuzobusController.controller('tbServicio',['$scope', '$routeParams', 'Servicios'
     return $scope.servicio;
   }, function (nv, ov){
     if(nv !== ov){
-      $('.servicio_mapa').append('<embed id="svg_mapa" src="assets/img/servicio_'+$routeParams.idServicio+'.svg" alt="svg image of a tiger" style="width: 100%; height: '+$scope.h+'px; border:1px solid #3B3E40; "/>');
+      $('.servicio_mapa').append('<embed id="svg_mapa" src="'+$scope.servicio.mapa+'" alt="svg image of a '+$scope.servicio.name+'" style="width: 100%; height: '+$scope.h+'px; border:1px solid #3B3E40; "/>');
       setTimeout(function(){
         svgPanZoom('#svg_mapa', {
           zoomEnabled: true,

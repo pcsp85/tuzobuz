@@ -25,17 +25,17 @@
 		"iconUrl" : "assets/img/menu_icons/horarios.png"
 	},
 	{
-		"menu" : "¿Cómo usar Tuzobús App?",
+		"menu" : "¿Cómo usar Tuzo Autobús App?",
 		"target" : "comoUsar",
 		"iconUrl" : "assets/img/menu_icons/comoUsar.png"
 	},
 	{
-		"menu" : "Calificar Tuzobús App",
+		"menu" : "Calificar Tuzo Autobús App",
 		"target" : "calificar",
 		"iconUrl" : "assets/img/menu_icons/calificar.png"
 	},
 	{
-		"menu" : "Sobre Tuzobús App",
+		"menu" : "Sobre Tuzo Autobús App",
 		"target" : "sobre",
 		"iconUrl" : "assets/img/menu_icons/creditos.png"
 	},

@@ -5,8 +5,8 @@
 	"latitude" : 20.0752888,
 	"longitude": -98.776578,
 	"servicios":[
-		"t01",
-		"t03",
-		"t05"
+		"troncal",
+		"re_2",
+		"re_1"
 	]
 }

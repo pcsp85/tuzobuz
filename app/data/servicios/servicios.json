@@ -1,37 +1,37 @@
 [
 	{
-		"id" : "t01",
-		"name" : "T01",
+		"id" : "troncal",
+		"name" : "Troncal",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_t01.png",
-		"mapa" : "assets/img/servicio_t01.svg"
+		"mapa" : "assets/img/rutaTroncal.svg"
 	},
 	{
-		"id" : "t02",
-		"name" : "T02",
-		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_t02.png",
-		"mapa" : "assets/img/servicio_t02.svg"
-	},
-	{
-		"id" : "t03",
-		"name" : "T03",
-		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_t03.png",
-		"mapa" : "assets/img/servicio_t03.svg"
-	},
-	{
-		"id" : "t04",
-		"name" : "T04",
-		"icon_1" : "assets/img/circle_bus_w.png",
-		"icon_2" : "assets/img/circle_bus_t04.png",
-		"mapa" : "assets/img/servicio_t04.svg"
-	},
-	{
-		"id" : "t05",
-		"name" : "T05",
+		"id" : "re_1",
+		"name" : "ruta Exprés 1",
 		"icon_1" : "assets/img/circle_bus_w.png",
 		"icon_2" : "assets/img/circle_bus_t05.png",
-		"mapa" : "assets/img/servicio_t05.svg"
+		"mapa" : "assets/img/rutaExpres_1.svg"
+	},
+	{
+		"id" : "re_2",
+		"name" : "ruta Exprés 2",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_t03.png",
+		"mapa" : "assets/img/rutaExpres_2.svg"
+	},
+	{
+		"id" : "re_3",
+		"name" : "ruta Exprés 3",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_t04.png",
+		"mapa" : "assets/img/rutaExpres_3.svg"
+	},
+	{
+		"id" : "re_4",
+		"name" : "ruta Exprés 4",
+		"icon_1" : "assets/img/circle_bus_w.png",
+		"icon_2" : "assets/img/circle_bus_t02.png",
+		"mapa" : "assets/img/rutaExpres_4.svg"
 	}
 ]
