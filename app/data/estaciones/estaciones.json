@@ -25,9 +25,9 @@
 		"longitude": -98.8026363,
 		"servicios":[
 			"troncal",
-			"re_4",
+			"re_1",
 			"re_2",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -38,8 +38,7 @@
 		"longitude": -98.7992202,
 		"servicios":[
 			"troncal",
-			"re_4",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -50,8 +49,7 @@
 		"longitude": -98.7940643,
 		"servicios":[
 			"troncal",
-			"re_4",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -62,8 +60,8 @@
 		"longitude": -98.7913214,
 		"servicios":[
 			"troncal",
-			"re_4",
-			"re_1"
+			"re_1",
+			"re_4"
 		]
 	},
 	{
@@ -74,8 +72,7 @@
 		"longitude": -98.7895922,
 		"servicios":[
 			"troncal",
-			"re_4",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -86,10 +83,10 @@
 		"longitude": -98.7866083,
 		"servicios":[
 			"troncal",
-			"re_4",
+			"re_1",
 			"re_2",
 			"re_3",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -100,8 +97,7 @@
 		"longitude": -98.7845797,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -112,10 +108,10 @@
 		"longitude": -98.7824214,
 		"servicios":[
 			"troncal",
-			"re_4",
+			"re_1",
 			"re_2",
 			"re_3",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -126,8 +122,7 @@
 		"longitude": -98.7802719,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -138,8 +133,7 @@
 		"longitude": -98.776578,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -150,8 +144,7 @@
 		"longitude": -98.7746894,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -162,8 +155,7 @@
 		"longitude": -98.7727024,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -174,10 +166,10 @@
 		"longitude": -98.7710541,
 		"servicios":[
 			"troncal",
-			"re_4",
+			"re_1",
 			"re_2",
 			"re_3",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -188,8 +180,7 @@
 		"longitude": -98.7708959,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -200,8 +191,7 @@
 		"longitude": -98.7697399,
 		"servicios":[
 			"troncal",
-			"re_2",
-			"re_1"
+			"re_2"
 		]
 	},
 	{
@@ -212,10 +202,10 @@
 		"longitude": -98.7658071,
 		"servicios":[
 			"troncal",
-			"re_4",
+			"re_1",
 			"re_2",
 			"re_3",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -226,10 +216,10 @@
 		"longitude": -98.7605992,
 		"servicios":[
 			"troncal",
-			"re_4",
+			"re_1",
 			"re_2",
 			"re_3",
-			"re_1"
+			"re_4"
 		]
 	},
 	{
@@ -240,7 +230,7 @@
 		"longitude": -98.754167,
 		"servicios":[
 			"troncal",
-			"re_1"
+			"re_3"
 		]
 	},
 	{
@@ -251,9 +241,9 @@
 		"longitude": -98.7509054,
 		"servicios":[
 			"troncal",
-			"re_4",
 			"re_2",
-			"re_3"
+			"re_3",
+			"re_4"
 		]
 	},
 	{
@@ -275,7 +265,10 @@
 		"longitude": -98.742600,
 		"servicios":[
 			"troncal",
-			"re_3"		]
+			"re_2",
+			"re_3",
+			"re_4"
+		]
 	},
 	{
 		"id": "manuel_dublan",
@@ -285,8 +278,6 @@
 		"longitude": -98.7347493,
 		"servicios":[
 			"troncal",
-			"re_4",
-			"re_2",
 			"re_3"
 		]
 	},
@@ -298,7 +289,10 @@
 		"longitude": -98.73132,
 		"servicios":[
 			"troncal",
-			"re_4"		]
+			"re_2",
+			"re_3",
+			"re_4"
+		]
 	},
 	{
 		"id": "ninos_heroes",
@@ -308,7 +302,8 @@
 		"longitude": -98.7328416,
 		"servicios":[
 			"troncal",
-			"re_4"		]
+			"re_4"
+		]
 	},
 	{
 		"id": "centro_historico",
@@ -318,9 +313,7 @@
 		"longitude": -98.7370367,
 		"servicios":[
 			"troncal",
-			"re_4",
-			"re_2",
-			"re_3"		]
+			"re_4"		]
 	},
 	{
 		"id": "plaza_juarez",
@@ -330,7 +323,10 @@
 		"longitude": -98.7402719,
 		"servicios":[
 			"troncal",
-			"re_3"		]
+			"re_2",
+			"re_3",
+			"re_4"
+		]
 	},
 	{
 		"id": "parque_del_maestro",
@@ -340,7 +336,8 @@
 		"longitude": -98.7402719,
 		"servicios":[
 			"troncal",
-			"re_3"		]
+			"re_3"
+		]
 	},
 	{
 		"id": "bioparque",
@@ -350,9 +347,9 @@
 		"longitude": -98.74488,
 		"servicios":[
 			"troncal",
-			"re_4",
 			"re_2",
-			"re_3"
+			"re_3",
+			"re_4"
 		]
 	}
 ]

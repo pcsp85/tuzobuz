@@ -10,7 +10,7 @@
 		"iconUrl" : "assets/img/menu_icons/estaciones.png"
 	},
 	{
-		"menu" : "Servicios",
+		"menu" : "Rutas",
 		"target" : "servicios",
 		"iconUrl" : "assets/img/menu_icons/servicios.png"
 	},
@@ -25,17 +25,17 @@
 		"iconUrl" : "assets/img/menu_icons/horarios.png"
 	},
 	{
-		"menu" : "¿Cómo usar Tuzo Autobús App?",
+		"menu" : "¿Cómo usar Tuzo Autobús?",
 		"target" : "comoUsar",
 		"iconUrl" : "assets/img/menu_icons/comoUsar.png"
 	},
 	{
-		"menu" : "Calificar Tuzo Autobús App",
+		"menu" : "Calificar Tuzo Autobús",
 		"target" : "calificar",
 		"iconUrl" : "assets/img/menu_icons/calificar.png"
 	},
 	{
-		"menu" : "Sobre Tuzo Autobús App",
+		"menu" : "Sobre Tuzo Autobús",
 		"target" : "sobre",
 		"iconUrl" : "assets/img/menu_icons/creditos.png"
 	},
