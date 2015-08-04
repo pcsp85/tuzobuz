@@ -1,6 +1,6 @@
 {
 	"id" : "re_3",
-	"name" : "ruta Exprés 3",
+	"name" : "Ruta Exprés 3",
 	"icon_1" : "assets/img/circle_bus_w.png",
 	"icon_2" : "assets/img/circle_bus_t04.png",
 	"mapa" : "assets/img/rutaExpres_3.svg"
