@@ -274,8 +274,8 @@
 		"id": "manuel_dublan",
 		"name": "Manuel Dublán",
 		"icon": "assets/img/estaciones_icons/ManuelDublan.png",
-		"latitude" : 20.12182,
-		"longitude": -98.7347493,
+		"latitude" : 20.125224,
+		"longitude": -98.7328416,
 		"servicios":[
 			"troncal",
 			"re_3"
@@ -285,8 +285,8 @@
 		"id": "presidente_aleman",
 		"name": "Presidente Alemán",
 		"icon": "assets/img/estaciones_icons/presidenteAleman.png",
-		"latitude" : 20.1292,
-		"longitude": -98.73132,
+		"latitude" : 20.12182,
+		"longitude": -98.7347493,
 		"servicios":[
 			"troncal",
 			"re_2",

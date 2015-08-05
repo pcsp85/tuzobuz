@@ -23,7 +23,7 @@ tuzobusController.controller('main', ['$scope', '$http', function ($scope, $http
     $http.get(remote_FD+'v/?action=activation_dates').success(function (data){
       if(new Date() > new Date(data.begin_date) && new Date() < new Date(data.end_date)){
         // Activa Formulario para ingresar código de validación
-        $('#activate_form').slideDown('slow');
+        $('#activate_form').css('height',$(window).height()).slideDown('slow');
       }else if(new Date() > new Date(data.end_date)){
         // Validación sin código
         localStorage.TuzobusApp_activated = "YES";

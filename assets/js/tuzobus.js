@@ -8,6 +8,7 @@ $(document).ready(function(){
 		$('.navmenu-default').offcanvas('hide');
 	});
 	document.addEventListener("menubutton", menuButton, false);
+	document.addEventListener('deviceready', AdsMob, false);
 });
 
 var est_toogle = function (o){
@@ -24,4 +25,12 @@ var menuButton = function (){
 	}else{
 		$('.navmenu-default').offcanvas('hide');
 	}
-}
+};
+
+var AdsMob = function (){
+	AdMob.createBanner({
+		adId: 'ca-app-pub-8926293590731038/3064246506',
+		position: AdMob.AD_POSITION.BOTTOM_CENTER,
+		autoshow: true
+	});
+};
