@@ -1,12 +1,11 @@
 {
 	"id": "hospitales",
 	"name": "Hospitales",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/hospitales.png",
 	"latitude" : 20.0752888,
 	"longitude": -98.776578,
 	"servicios":[
-		"troncal",
 		"re_2",
-		"re_1"
+		"troncal"
 	]
 }

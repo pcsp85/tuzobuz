@@ -1,14 +1,11 @@
 {
 	"id": "cuna_del_futbol",
 	"name": "Cuna del Futbol",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/cunaDelFutbol.png",
 	"latitude" : 20.1086255,
 	"longitude": -98.7549951,
 	"servicios":[
-		"troncal",
-		"re_4",
-		"re_2",
 		"re_3",
-		"re_1"
+		"troncal"
 	]
 }

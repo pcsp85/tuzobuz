@@ -1,13 +1,13 @@
 {
 	"id": "matilde",
 	"name": "Matilde",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/Matilde.png",
 	"latitude" : 20.0311184,
 	"longitude": -98.8026363,
 	"servicios":[
-		"troncal",
 		"re_4",
 		"re_2",
-		"re_1"
+		"re_1",
+		"troncal"
 	]
 }

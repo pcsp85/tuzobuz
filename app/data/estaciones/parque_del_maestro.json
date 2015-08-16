@@ -1,10 +1,11 @@
 {
 	"id": "parque_del_maestro",
 	"name": "Parque del maestro",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/parqueDelMaestro.png",
 	"latitude" : 20.1206532,
 	"longitude": -98.7402719,
 	"servicios":[
-		"troncal",
-		"re_3"		]
+		"re_3",
+		"troncal"
+	]
 }

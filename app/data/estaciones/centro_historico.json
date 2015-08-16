@@ -1,12 +1,11 @@
 {
 	"id": "centro_historico",
 	"name": "Centro Histórico",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
-	"latitude" : 20.1226926,
-	"longitude": -98.7370367,
+	"icon": "assets/img/estaciones_icons/centroHistorico.png",
+	"latitude" : 20.1292,
+	"longitude": -98.73132,
 	"servicios":[
-		"troncal",
 		"re_4",
-		"re_2",
-		"re_3"		]
+		"troncal"
+	]
 }

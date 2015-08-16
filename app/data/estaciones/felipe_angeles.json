@@ -1,14 +1,14 @@
 {
 	"id": "felipe_angeles",
 	"name": "Felipe Ángeles",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/FelipeAngeles.png",
 	"latitude" : 20.0562101,
 	"longitude": -98.7866083,
 	"servicios":[
-		"troncal",
 		"re_4",
-		"re_2",
 		"re_3",
-		"re_1"
+		"re_2",
+		"re_1",
+		"troncal"
 	]
 }

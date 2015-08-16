@@ -1,12 +1,11 @@
 {
 	"id": "tercera_edad",
 	"name": "Tercera edad",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/terceraEdad.png",
 	"latitude" : 20.0422091,
 	"longitude": -98.7940643,
 	"servicios":[
-		"troncal",
 		"re_4",
-		"re_1"
+		"troncal"
 	]
 }

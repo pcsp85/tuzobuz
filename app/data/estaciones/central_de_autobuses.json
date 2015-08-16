@@ -1,11 +1,14 @@
 {
 	"id": "central_de_autobuses",
-	"name": "Central de autobuses",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"name": "Central de Autobuses",
+	"icon": "assets/img/estaciones_icons/centralDeAutobuses.png",
 	"latitude" : 20.1031581,
 	"longitude": -98.7605992,
 	"servicios":[
-		"troncal",
-		"re_1"
+		"re_4",
+		"re_3",
+		"re_2",
+		"re_1",
+		"troncal"
 	]
 }

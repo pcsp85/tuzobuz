@@ -1,13 +1,11 @@
 {
 	"id": "manuel_dublan",
 	"name": "Manuel Dublán",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
-	"latitude" : 20.125224,
-	"longitude": -98.7328416,
+	"icon": "assets/img/estaciones_icons/ManuelDublan.png",
+	"latitude" : 20.1185733,
+	"longitude": -98.7391947,
 	"servicios":[
-		"troncal",
-		"re_4",
-		"re_2",
-		"re_3"
+		"re_3",
+		"troncal"
 	]
 }

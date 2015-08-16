@@ -1,10 +1,10 @@
 {
 	"id": "terminal",
-	"name": "Terminal / Patio Tellez",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"name": "Terminal Téllez",
+	"icon": "assets/img/estaciones_icons/terminalTellez.png",
 	"latitude" : 20.0094155,
 	"longitude": -98.8032707,
 	"servicios":[
 		"troncal"
-		]
+	]
 }

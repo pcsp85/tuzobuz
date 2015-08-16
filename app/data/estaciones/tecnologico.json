@@ -1,12 +1,11 @@
 {
 	"id": "tecnologico",
 	"name": "Tecnológico",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/tecnologico.png",
 	"latitude" : 20.0833382,
 	"longitude": -98.7727024,
 	"servicios":[
-		"troncal",
 		"re_2",
-		"re_1"
+		"troncal"
 	]
 }

@@ -1,12 +1,11 @@
 {
 	"id": "efren_rebolledo",
-	"name": "Efren Rebolledo",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"name": "Efrén Rebolledo",
+	"icon": "assets/img/estaciones_icons/EfrenRebolledo.png",
 	"latitude" : 20.0349814,
 	"longitude": -98.7992202,
 	"servicios":[
-		"troncal",
 		"re_4",
-		"re_1"
+		"troncal"
 	]
 }

@@ -1,10 +1,13 @@
 {
 	"id": "presidente_aleman",
 	"name": "Presidente Alemán",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/presidenteAleman.png",
 	"latitude" : 20.12182,
 	"longitude": -98.7347493,
 	"servicios":[
-		"troncal",
-		"re_4"		]
+		"re_4",
+		"re_3",
+		"re_2",
+		"troncal"
+	]
 }

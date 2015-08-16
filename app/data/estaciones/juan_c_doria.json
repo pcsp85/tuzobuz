@@ -1,12 +1,11 @@
 {
 	"id": "juan_c_doria",
-	"name": "Juan C Doria",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"name": "Juan C. Doria",
+	"icon": "assets/img/estaciones_icons/JuanCDoria.png",
 	"latitude" : 20.0682838,
 	"longitude": -98.7802719,
 	"servicios":[
-		"troncal",
 		"re_2",
-		"re_1"
+		"troncal"
 	]
 }

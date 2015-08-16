@@ -1,14 +1,14 @@
 {
 	"id": "bicentenario",
 	"name": "Bicentenario",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/bicentenario.png",
 	"latitude" : 20.0882647,
 	"longitude": -98.7710541,
 	"servicios":[
-		"troncal",
 		"re_4",
-		"re_2",
 		"re_3",
-		"re_1"
+		"re_2",
+		"re_1",
+		"troncal"
 	]
 }

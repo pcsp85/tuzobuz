@@ -1,12 +1,11 @@
 {
 	"id": "zona_plateada",
 	"name": "Zona Plateada",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/zonaPlateada.png",
 	"latitude" : 20.0943968,
 	"longitude": -98.7697399,
 	"servicios":[
-		"troncal",
 		"re_2",
-		"re_1"
+		"troncal"
 	]
 }

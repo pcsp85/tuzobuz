@@ -1,12 +1,13 @@
 {
 	"id": "bioparque",
 	"name": "Bioparque",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/bioparque.png",
 	"latitude" : 20.11711,
 	"longitude": -98.74488,
 	"servicios":[
-		"troncal",
 		"re_4",
+		"re_3",
 		"re_2",
-		"re_3"		]
+		"troncal"
+	]
 }

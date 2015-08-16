@@ -1,13 +1,13 @@
 {
 	"id": "santa_julia",
 	"name": "Santa Julia",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/santaJulia.png",
 	"latitude" : 20.1125438,
 	"longitude": -98.7509054,
 	"servicios":[
-		"troncal",
 		"re_4",
+		"re_3",
 		"re_2",
-		"re_3"
+		"troncal"
 	]
 }

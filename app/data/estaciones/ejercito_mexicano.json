@@ -1,12 +1,11 @@
 {
 	"id": "ejercito_mexicano",
-	"name": "Ejercito Mexicano",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"name": "Ejército Mexicano",
+	"icon": "assets/img/estaciones_icons/ejercitoMexicano.png",
 	"latitude" : 20.0503685,
 	"longitude": -98.7895922,
 	"servicios":[
-		"troncal",
 		"re_4",
-		"re_1"
+		"troncal"
 	]
 }

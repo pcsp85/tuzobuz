@@ -24,10 +24,10 @@
 		"latitude" : 20.0311184,
 		"longitude": -98.8026363,
 		"servicios":[
-			"troncal",
-			"re_1",
+			"re_4",
 			"re_2",
-			"re_4"
+			"re_1",
+			"troncal"
 		]
 	},
 	{
@@ -37,8 +37,8 @@
 		"latitude" : 20.0349814,
 		"longitude": -98.7992202,
 		"servicios":[
-			"troncal",
-			"re_4"
+			"re_4",
+			"troncal"
 		]
 	},
 	{
@@ -48,8 +48,8 @@
 		"latitude" : 20.0422091,
 		"longitude": -98.7940643,
 		"servicios":[
-			"troncal",
-			"re_4"
+			"re_4",
+			"troncal"
 		]
 	},
 	{
@@ -59,9 +59,9 @@
 		"latitude" : 20.047077,
 		"longitude": -98.7913214,
 		"servicios":[
-			"troncal",
+			"re_4",
 			"re_1",
-			"re_4"
+			"troncal"
 		]
 	},
 	{
@@ -71,8 +71,8 @@
 		"latitude" : 20.0503685,
 		"longitude": -98.7895922,
 		"servicios":[
-			"troncal",
-			"re_4"
+			"re_4",
+			"troncal"
 		]
 	},
 	{
@@ -82,11 +82,11 @@
 		"latitude" : 20.0562101,
 		"longitude": -98.7866083,
 		"servicios":[
-			"troncal",
-			"re_1",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"re_1",
+			"troncal"
 		]
 	},
 	{
@@ -96,8 +96,8 @@
 		"latitude" : 20.0600413,
 		"longitude": -98.7845797,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -107,11 +107,11 @@
 		"latitude" : 20.0641544,
 		"longitude": -98.7824214,
 		"servicios":[
-			"troncal",
-			"re_1",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"re_1",
+			"troncal"
 		]
 	},
 	{
@@ -121,8 +121,8 @@
 		"latitude" : 20.0682838,
 		"longitude": -98.7802719,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -132,8 +132,8 @@
 		"latitude" : 20.0752888,
 		"longitude": -98.776578,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -143,8 +143,8 @@
 		"latitude" : 20.0790738,
 		"longitude": -98.7746894,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -154,8 +154,8 @@
 		"latitude" : 20.0833382,
 		"longitude": -98.7727024,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -165,11 +165,11 @@
 		"latitude" : 20.0882647,
 		"longitude": -98.7710541,
 		"servicios":[
-			"troncal",
-			"re_1",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"re_1",
+			"troncal"
 		]
 	},
 	{
@@ -179,8 +179,8 @@
 		"latitude" : 20.0907946,
 		"longitude": -98.7708959,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -190,8 +190,8 @@
 		"latitude" : 20.0943968,
 		"longitude": -98.7697399,
 		"servicios":[
-			"troncal",
-			"re_2"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -201,11 +201,11 @@
 		"latitude" : 20.0981557,
 		"longitude": -98.7658071,
 		"servicios":[
-			"troncal",
-			"re_1",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"re_1",
+			"troncal"
 		]
 	},
 	{
@@ -215,22 +215,22 @@
 		"latitude" : 20.1031581,
 		"longitude": -98.7605992,
 		"servicios":[
-			"troncal",
-			"re_1",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"re_1",
+			"troncal"
 		]
 	},
 	{
 		"id": "cuna_del_futbol",
 		"name": "Cuna del Futbol",
 		"icon": "assets/img/estaciones_icons/cunaDelFutbol.png",
-		"latitude" : 20.10665,
-		"longitude": -98.754167,
+		"latitude" : 20.1086255,
+		"longitude": -98.7549951,
 		"servicios":[
-			"troncal",
-			"re_3"
+			"re_3",
+			"troncal"
 		]
 	},
 	{
@@ -240,10 +240,10 @@
 		"latitude" : 20.1125438,
 		"longitude": -98.7509054,
 		"servicios":[
-			"troncal",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -253,8 +253,8 @@
 		"latitude" : 20.1147067,
 		"longitude": -98.748163,
 		"servicios":[
-			"troncal",
-			"re_3"
+			"re_3",
+			"troncal"
 		]
 	},
 	{
@@ -264,21 +264,21 @@
 		"latitude" : 20.116205,
 		"longitude": -98.742600,
 		"servicios":[
-			"troncal",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
 		"id": "manuel_dublan",
 		"name": "Manuel Dublán",
 		"icon": "assets/img/estaciones_icons/ManuelDublan.png",
-		"latitude" : 20.125224,
-		"longitude": -98.7328416,
+		"latitude" : 20.1185733,
+		"longitude": -98.7391947,
 		"servicios":[
-			"troncal",
-			"re_3"
+			"re_3",
+			"troncal"
 		]
 	},
 	{
@@ -288,10 +288,10 @@
 		"latitude" : 20.12182,
 		"longitude": -98.7347493,
 		"servicios":[
-			"troncal",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -301,31 +301,32 @@
 		"latitude" : 20.125224,
 		"longitude": -98.7328416,
 		"servicios":[
-			"troncal",
-			"re_4"
+			"re_4",
+			"troncal"
 		]
 	},
 	{
 		"id": "centro_historico",
 		"name": "Centro Histórico",
 		"icon": "assets/img/estaciones_icons/centroHistorico.png",
-		"latitude" : 20.1226926,
-		"longitude": -98.7370367,
+		"latitude" : 20.1292,
+		"longitude": -98.73132,
 		"servicios":[
-			"troncal",
-			"re_4"		]
+			"re_4",
+			"troncal"
+		]
 	},
 	{
 		"id": "plaza_juarez",
 		"name": "Plaza Juárez",
 		"icon": "assets/img/estaciones_icons/plazaJuarez.png",
-		"latitude" : 20.1206532,
-		"longitude": -98.7402719,
+		"latitude" : 20.1226926,
+		"longitude": -98.7370367,
 		"servicios":[
-			"troncal",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"troncal"
 		]
 	},
 	{
@@ -335,8 +336,8 @@
 		"latitude" : 20.1206532,
 		"longitude": -98.7402719,
 		"servicios":[
-			"troncal",
-			"re_3"
+			"re_3",
+			"troncal"
 		]
 	},
 	{
@@ -346,10 +347,10 @@
 		"latitude" : 20.11711,
 		"longitude": -98.74488,
 		"servicios":[
-			"troncal",
-			"re_2",
+			"re_4",
 			"re_3",
-			"re_4"
+			"re_2",
+			"troncal"
 		]
 	}
 ]

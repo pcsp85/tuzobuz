@@ -1,12 +1,11 @@
 {
 	"id": "seph",
 	"name": "SEPH",
-	"icon": "assets/img/estaciones_icons/bus_w.png",
+	"icon": "assets/img/estaciones_icons/seph.png",
 	"latitude" : 20.0790738,
 	"longitude": -98.7746894,
 	"servicios":[
-		"troncal",
 		"re_2",
-		"re_1"
+		"troncal"
 	]
 }
