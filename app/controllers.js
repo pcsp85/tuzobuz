@@ -99,7 +99,7 @@ tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 
   }, function (nv, ov){
     var estaciones = Estaciones.query( function (estaciones){
       $(estaciones).each(function (i,e){
-        $scope.marcas[i] = {id:i, latitude: e.latitude, longitude: e.longitude, title: e.name};
+        $scope.marcas[i] = {id:i, latitude: e.latitude, longitude: e.longitude, title: e.name, icon: e.icon};
       });
     });
   }, true);
@@ -141,7 +141,7 @@ tuzobusController.controller('tbGMDetCtrl',['$rootScope', '$scope',"uiGmapLogger
           var count = 0;
           $(estaciones).each(function (i,e){
             if($.inArray($routeParams.mid, e.servicios) != -1){
-              $scope.marcas[$scope.marcas.length]  = {id: count, latitude: e.latitude, longitude: e.longitude, title: e.name};
+              $scope.marcas[$scope.marcas.length]  = {id: count, latitude: e.latitude, longitude: e.longitude, title: e.name, icon: e.icon};
               count++;
             }
           });
@@ -154,7 +154,7 @@ tuzobusController.controller('tbGMDetCtrl',['$rootScope', '$scope',"uiGmapLogger
             $scope.map.center.longitude = estacion.longitude;
             flag = true;
           }
-          $scope.marcas[0] = {id:0, latitude: estacion.latitude, longitude: estacion.longitude, title: estacion.name}
+          $scope.marcas[0] = {id:0, latitude: estacion.latitude, longitude: estacion.longitude, title: estacion.name, icon: estacion.icon}
         });
       }
 
