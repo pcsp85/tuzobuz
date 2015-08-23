@@ -134,7 +134,7 @@ tuzobusController.controller('tbGMDetCtrl',['$rootScope', '$scope',"uiGmapLogger
   }, function (nv, ov){
       if(tipo=="servicio"){
         var servicio = Servicios.get({idServicio:$routeParams.mid}, function (servicio){
-          $scope.h1 = "Servicio " + servicio.name;
+          $scope.h1 = servicio.name;
         });
 
         var estaciones = Estaciones.query(function (estaciones){
@@ -275,7 +275,7 @@ tuzobusController.controller('tbHorarios',['$scope', '$http', function ($scope, 
   });
 }]);
 
-tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 'Estaciones', function ($scope, filterFilter, Estaciones){
+tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 'Estaciones', 'Servicios', function ($scope, filterFilter, Estaciones, Servicios){
   navigator.geolocation.clearWatch($scope.position);
   $scope.position = navigator.geolocation.watchPosition(posSuccess, posError, {timeout: 3000});
 
@@ -292,6 +292,12 @@ tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 
     Estaciones.query().$promise.then(function (data){
       $(data).each(function(i,e){
         e.distancia = distancia(search,e);
+        e.serv = [];
+        $(e.servicios).each(function (i,el){
+          Servicios.get({idServicio:el}, function (servicio){
+            e.serv.push({clase:el,name:servicio.name });
+          });
+        });
         if(e.latitude>= la_li && e.latitude<=la_ls && e.longitude>=lo_li && e.longitude<=lo_ls) estaciones.push(e);
       });
     });
@@ -319,3 +325,21 @@ tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 
   }
 
 }]);
+
+tuzobusController.controller('alimentadorasCtrl', ['$scope', 'Alimentadoras', function ($scope, Alimentadoras){
+  $scope.rutas = Alimentadoras.query(function (data){
+    setTimeout(function(){
+      $('.icon').each(function (){
+        var nh = $(this).width(), stw = ($(this).next().width()-$(this).next().width()*.15)/6, mst = (nh-stw)/2;
+        $(this).css('height', nh)
+          .next().css('height', nh)
+          .find('.st').css('width', stw).css('margin-top', mst);
+        $(this).next().next().css('height', nh);
+      });
+    }, 100);
+  });
+
+  $('.navmenu-default a[href="#/rutasAlimentadoras"]').addClass('active').parent().siblings().children('a').removeClass('active');
+}]);
+
+tuzobusController.controller('alimentadorasMapa', ['$scope', 'Alimentadoras', function ($scope, Alimentadoras){}]);

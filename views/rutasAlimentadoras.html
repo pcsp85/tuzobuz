@@ -1,0 +1,16 @@
+<div class="row">
+<ul class="estaciones">
+	<li ng-repeat="ruta in rutas" onclick="est_toogle($(this));">
+		<div class="icon"><img ng-src="{{ruta.begin.icon}}"></div>
+		<div class="stage2">
+			<a href="#/rutasAlimentadoras/{{ruta.id}}"><img src="assets/img/circle_mapa.png" class="st"></a>
+			<img  ng-src="{{ruta.end.icon}}" class="st">
+			<span style="float:right; padding-top:1em; padding-right:1em;">{{ruta.end.name}}</span>
+		</div>
+		<div class="stage1">
+			{{ruta.begin.name}}<br><small>Ver correspondencia</small>
+		</div>
+	</li>
+</ul>
+</div>
+<ng-include src="'views/ads.html'" ng-controller="tbAds"></ng-include>

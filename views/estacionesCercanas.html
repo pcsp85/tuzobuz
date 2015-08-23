@@ -1,8 +1,8 @@
 <div id="locationStatus"></div>
 <div ng-repeat="est in estaciones" class="estCercanas">
 	<ul>
-		<li ng-repeat="s in est.servicios" class="{{s}}">
-			<img src="assets/img/estaciones_icons/bus_w.png"> {{s | uppercase}}
+		<li ng-repeat="s in est.serv" class="{{s.clase}}">
+			<img src="assets/img/estaciones_icons/bus_w.png"> {{s.name}}
 		</li>
 	</ul>
 	<div class="text-center">

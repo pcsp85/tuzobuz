@@ -16,6 +16,12 @@ tuzobusServices.factory('Estaciones',['$resource', function ($resource){
 	});
 }]);
 
+tuzobusServices.factory('Alimentadoras',['$resource', function ($resource){
+	return $resource('app/data/alimentadoras/:idRuta.json', {}, {
+		query: {method:'GET', params:{idRuta:'alimentadoras'}, isArray:true}
+	});
+}]);
+
 tuzobusServices.factory('Ads',['$resource', function ($resource){
 	return $resource(remote_FD+'v/', {}, {
 		query: {method: 'POST', params:{action:'get_ads'}, isArray:true}

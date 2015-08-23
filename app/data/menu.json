@@ -20,6 +20,11 @@
 		"iconUrl" : "assets/img/menu_icons/estacionesCercanas.png"
 	},
 	{
+		"menu" : "Rutas Alimentadoras",
+		"target" : "rutasAlimentadoras",
+		"iconUrl" : "assets/img/menu_icons/rutasAlimentadoras.png"
+	},
+	{
 		"menu" : "Horarios",
 		"target" : "horarios",
 		"iconUrl" : "assets/img/menu_icons/horarios.png"

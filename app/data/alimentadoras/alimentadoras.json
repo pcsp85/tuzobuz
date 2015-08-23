@@ -1,0 +1,340 @@
+[
+	{
+		"id":"1a",
+		"begin":
+			{
+				"name": "Matilde",
+				"icon": "assets/img/alimentadoras_icons/1.png"
+			},
+		"end":
+			{
+				"name": "Matilde",
+				"icon": "assets/img/estaciones_icons/Matilde.png"
+			} 
+	},
+	{
+		"id":"1b",
+		"begin":
+			{
+				"name": "Matilde",
+				"icon": "assets/img/alimentadoras_icons/1.png"
+			},
+		"end":
+			{
+				"name": "Matilde",
+				"icon": "assets/img/estaciones_icons/Matilde.png"
+			}
+	},
+	{
+		"id":"2a",
+		"begin":
+			{
+				"name": "Real de Joyas",
+				"icon": "assets/img/alimentadoras_icons/2.png"
+			},
+		"end":
+			{
+				"name": "Matilde",
+				"icon": "assets/img/estaciones_icons/Matilde.png"
+				}
+	},
+	{
+		"id":"2b",
+		"begin":
+			{
+				"name": "Real de Joyas",
+				"icon": "assets/img/alimentadoras_icons/2.png"
+			},
+		"end":
+			{
+				"name": "Gabriel Mancera",
+				"icon": "assets/img/estaciones_icons/gabrielMancera.png"
+			}
+	},
+	{
+		"id":"3",
+		"begin":
+			{
+				"name":"Real de Toledo",
+				"icon":"assets/img/alimentadoras_icons/3.png"
+			},
+		"end":
+			{
+				"name": "Efrén Rebolledo",
+				"icon": "assets/img/estaciones_icons/EfrenRebolledo.png"
+				}
+	},
+	{
+		"id":"4a",
+		"begin":
+			{
+				"name": "La Palma",
+				"icon": "assets/img/alimentadoras_icons/4.png"
+			},
+		"end":
+			{
+				"name": "Tercera Edad",
+				"icon": "assets/img/estaciones_icons/terceraEdad.png"
+			}
+	},
+	{
+		"id":"4b",
+		"begin":
+			{
+				"name": "La Palma",
+				"icon": "assets/img/alimentadoras_icons/4.png"
+			},
+		"end":
+			{
+				"name": "Tercera Edad",
+				"icon": "assets/img/estaciones_icons/terceraEdad.png"
+			}
+	},
+	{
+		"id":"5a",
+		"begin":
+			{
+				"name": "Parque Urbano",
+				"icon": "assets/img/alimentadoras_icons/5.png"
+			},
+		"end":
+			{
+				"name": "Felipe Ángeles",
+				"icon": "assets/img/estaciones_icons/FelipeAngeles.png"
+			}
+	},
+	{
+		"id":"5b",
+		"begin":
+			{
+				"name": "Parque Urbano",
+				"icon": "assets/img/alimentadoras_icons/5.png"
+			},
+		"end":
+			{
+				"name": "San Antonio",
+				"icon": "assets/img/estaciones_icons/sanAntonio.png"
+			}
+	},
+	{
+		"id":"6",
+		"begin":
+			{
+				"name": "Hogares Unión",
+				"icon": "assets/img/alimentadoras_icons/6.png"
+			},
+		"end":
+			{
+				"name": "Ejército Mexicano",
+				"icon": "assets/img/estaciones_icons/ejercitoMexicano.png"
+			}
+	},
+	{
+		"id":"7",
+		"begin":
+			{
+				"name": "Rancho la Colonia",
+				"icon": "assets/img/alimentadoras_icons/7.png"
+			},
+		"end":
+			{
+				"name": "Felipe Ángeles",
+				"icon": "assets/img/estaciones_icons/FelipeAngeles.png"
+			}
+	},
+	{
+		"id":"8",
+		"begin":
+			{
+				"name": "Los Tuzos",
+				"icon": "assets/img/alimentadoras_icons/8.png"
+			},
+		"end":
+			{
+				"name": "Centro de Justicia",
+				"icon": "assets/img/estaciones_icons/centroDeJusticia.png"
+			}
+	},
+	{
+		"id":"9",
+		"begin":
+			{
+				"name": "Pitahayas",
+				"icon": "assets/img/alimentadoras_icons/9.png"
+			},
+		"end":
+			{
+				"name": "Centro de Justicia",
+				"icon": "assets/img/estaciones_icons/centroDeJusticia.png"
+			}
+	},
+	{
+		"id":"10",
+		"begin":
+			{
+				"name": "Paseo de Camelinas",
+				"icon": "assets/img/alimentadoras_icons/10.png"
+			},
+		"end":
+			{
+				"name": "Centro de Justicia",
+				"icon": "assets/img/estaciones_icons/centroDeJusticia.png"
+			}
+	},
+	{
+		"id":"11",
+		"begin":
+			{
+				"name": "El Huixmí",
+				"icon": "assets/img/alimentadoras_icons/11.png"
+			},
+		"end":
+			{
+				"name": "Centro de Justicia",
+				"icon": "assets/img/estaciones_icons/centroDeJusticia.png"
+			}
+	},
+	{
+		"id":"12",
+		"begin":
+			{
+				"name": "La Colonia",
+				"icon": "assets/img/alimentadoras_icons/12.png"
+			},
+		"end":
+			{
+				"name": "Juan C. Doria",
+				"icon": "assets/img/estaciones_icons/JuanCDoria.png"
+			}
+	},
+	{
+		"id":"13",
+		"begin":
+			{
+				"name": "El Venado",
+				"icon": "assets/img/alimentadoras_icons/13.png"
+			},
+		"end":
+			{
+				"name": "Hospitales",
+				"icon": "assets/img/estaciones_icons/hospitales.png"
+			}
+	},
+	{
+		"id":"14a",
+		"begin":
+			{
+				"name": "San Pedro Nopancalco",
+				"icon": "assets/img/alimentadoras_icons/14.png"
+			},
+		"end":
+			{
+				"name": "Bicentenario",
+				"icon": "assets/img/estaciones_icons/bicentenario.png"
+			}
+	},
+	{
+		"id":"14b",
+		"begin":
+			{
+				"name": "San Pedro Nopancalco",
+				"icon": "assets/img/alimentadoras_icons/14.png"
+			},
+		"end":
+			{
+				"name": "Bicentenario",
+				"icon": "assets/img/estaciones_icons/bicentenario.png"
+			}
+	},
+	{
+		"id":"15a",
+		"begin":
+			{
+				"name": "La Loma / Abeto",
+				"icon": "assets/img/alimentadoras_icons/15.png"
+			},
+		"end":
+			{
+				"name": "Cuna del Futbol",
+				"icon": "assets/img/estaciones_icons/cunaDelFutbol.png"
+			}
+	},
+	{
+		"id":"15b",
+		"begin":
+			{
+				"name": "La Loma / Abeto",
+				"icon": "assets/img/alimentadoras_icons/15.png"
+			},
+		"end":
+			{
+				"name": "Cuna del Futbol",
+				"icon": "assets/img/estaciones_icons/cunaDelFutbol.png"
+			}
+	},
+	{
+		"id":"16",
+		"begin":
+			{
+				"name": "San Carlos",
+				"icon": "assets/img/alimentadoras_icons/16.png"
+			},
+		"end":
+			{
+				"name": "Tec. de Monterrey",
+				"icon": "assets/img/estaciones_icons/tecDeMonterrey.png"
+			}
+	},
+	{
+		"id":"17a",
+		"begin":
+			{
+				"name": "Punta Azul",
+				"icon": "assets/img/alimentadoras_icons/17.png"
+			},
+		"end":
+			{
+				"name": "Santa Julia",
+				"icon": "assets/img/estaciones_icons/santaJulia.png"
+			}
+	},
+	{
+		"id":"17b",
+		"begin":
+			{
+				"name": "Punta Azul",
+				"icon": "assets/img/alimentadoras_icons/17.png"
+			},
+		"end":
+			{
+				"name": "Santa Julia",
+				"icon": "assets/img/estaciones_icons/santaJulia.png"
+			}
+	},
+	{
+		"id":"18",
+		"begin":
+			{
+				"name": "Real del Valle",
+				"icon": "assets/img/alimentadoras_icons/18.png"
+			},
+		"end":
+			{
+				"name": "Prepa 1",
+				"icon": "assets/img/estaciones_icons/prepa1.png"
+			}
+	},
+	{
+		"id":"19",
+		"begin":
+			{
+				"name": "Parque de Poblamiento",
+				"icon": "assets/img/alimentadoras_icons/19.png"
+			},
+		"end":
+			{
+				"name": "Prepa 1",
+				"icon": "assets/img/estaciones_icons/prepa1.png"
+			}
+	}
+]

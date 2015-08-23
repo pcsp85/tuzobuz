@@ -50,6 +50,11 @@ tuzobusApp.config(['$routeProvider',
 		})
 		.when('/rutasAlimentadoras', {
 			templateUrl: 'views/rutasAlimentadoras.html',
+			controller: 'alimentadorasCtrl',
+		})
+		.when('/rutasAlimentadoras/:idRuta',{
+			templateUrl: 'views/rutasAliMapa.html',
+			controller: 'alimentadorasMapa',
 		})
 		.when('/comoLlegar', {
 			templateUrl: 'views/comoLlegar.html',
