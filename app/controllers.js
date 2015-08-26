@@ -105,7 +105,7 @@ tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 
   }, true);
 
   /* redimencionando y activamdo el estado del menú */
-  $('.angular-google-map-container').css('height', $(window).height()-120 );
+  $('.angular-google-map-container').css('height', $(window).height() - (Math.round($('.angular-google-map-container').offset().top) + 15 ));
   $('.navmenu-default a[href="#/mapa"]').addClass('active').parent().siblings().children('a').removeClass('active');
 }]);
 
@@ -161,7 +161,7 @@ tuzobusController.controller('tbGMDetCtrl',['$rootScope', '$scope',"uiGmapLogger
   }, true);
 
   /* redimencionando y activamdo el estado del menú */
-  $('.angular-google-map-container').css('height', $(window).height()-120 );
+  $('.angular-google-map-container').css('height', $(window).height() - (Math.round($('.angular-google-map-container').offset().top) + 15 ));
   $('.navmenu-default a[href="#/mapa"]').addClass('active').parent().siblings().children('a').removeClass('active');
 
 }]);
@@ -342,4 +342,37 @@ tuzobusController.controller('alimentadorasCtrl', ['$scope', 'Alimentadoras', fu
   $('.navmenu-default a[href="#/rutasAlimentadoras"]').addClass('active').parent().siblings().children('a').removeClass('active');
 }]);
 
-tuzobusController.controller('alimentadorasMapa', ['$scope', 'Alimentadoras', function ($scope, Alimentadoras){}]);
+tuzobusController.controller('alimentadorasMapa', ['$rootScope', '$scope', 'uiGmapLogger', '$routeParams', 'Alimentadoras', function ($rootScope, $scope, $log, $routeParams, Alimentadoras){
+  var idRuta = $routeParams.idRuta;
+  $scope.map = {
+    center:{
+      latitude: 20.03393,
+      longitude: -98.81244
+    },
+    zoom: 15,
+    refresh: false,
+    options: {
+      disableDefaultUI: true
+    },
+    events: {},
+    bounds: {}
+  };
+  $scope.paradas = [];
+  $scope.rutas = [];
+
+  $scope.$watch(function(){
+    return $scope.map.bounds;
+  },function (nv,ov){
+    Alimentadoras.get({idRuta:idRuta}, function (ruta){
+      $scope.h1 = ruta.id.toUpperCase() + ' ' + ruta.begin.name + ' - ' + ruta.end.name;
+      $scope.map.center.latitude = (ruta.begin.latitude + ruta.end.latitude) / 2;
+      $scope.map.center.longitude = (ruta.begin.longitude + ruta.end.longitude) / 2;
+      $scope.paradas[$scope.paradas.length]  = {id: 0, latitude: ruta.begin.latitude, longitude: ruta.begin.longitude, title: ruta.begin.name, icon: ruta.begin.icon};
+      $scope.paradas[$scope.paradas.length]  = {id: $scope.paradas.length, latitude: ruta.end.latitude, longitude: ruta.end.longitude, title: ruta.end.name, icon: ruta.end.icon};
+      $('.angular-google-map-container').css('height', $(window).height() - (Math.round($('.angular-google-map-container').offset().top) + 15 ));
+    });
+  }, true);
+
+  /* activando el estado del menú */
+  $('.navmenu-default a[href="#/rutasAlimentadoras"]').addClass('active').parent().siblings().children('a').removeClass('active');
+}]);

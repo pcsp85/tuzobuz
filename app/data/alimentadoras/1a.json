@@ -1,0 +1,17 @@
+{
+	"id":"1a",
+	"begin":
+		{
+			"name": "Matilde",
+			"icon": "assets/img/alimentadoras_icons/1.png",
+			"latitude": 20.03393,
+			"longitude": -98.81244
+		},
+	"end":
+		{
+			"name": "Matilde",
+			"icon": "assets/img/estaciones_icons/Matilde.png",
+			"latitude": 20.03049, 
+			"longitude": -98.80345
+		}
+}
