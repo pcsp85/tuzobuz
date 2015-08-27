@@ -359,16 +359,24 @@ tuzobusController.controller('alimentadorasMapa', ['$rootScope', '$scope', 'uiGm
   };
   $scope.paradas = [];
   $scope.rutas = [];
-
+  var flag = false;
   $scope.$watch(function(){
     return $scope.map.bounds;
   },function (nv,ov){
     Alimentadoras.get({idRuta:idRuta}, function (ruta){
       $scope.h1 = ruta.id.toUpperCase() + ' ' + ruta.begin.name + ' - ' + ruta.end.name;
-      $scope.map.center.latitude = (ruta.begin.latitude + ruta.end.latitude) / 2;
-      $scope.map.center.longitude = (ruta.begin.longitude + ruta.end.longitude) / 2;
+      if(flag==false){
+        $scope.map.center.latitude = (ruta.begin.latitude + ruta.end.latitude) / 2;
+        $scope.map.center.longitude = (ruta.begin.longitude + ruta.end.longitude) / 2;
+        flag = true;
+      }
       $scope.paradas[$scope.paradas.length]  = {id: 0, latitude: ruta.begin.latitude, longitude: ruta.begin.longitude, title: ruta.begin.name, icon: ruta.begin.icon};
+      $(ruta.paradas).each(function (n,p){
+        $scope.paradas[$scope.paradas.length] = {id: $scope.paradas.length, latitude: p.latitude, longitude: p.longitude, title: "parada", icon: "assets/img/alimentadoras_icons/bus.png"};
+      });
       $scope.paradas[$scope.paradas.length]  = {id: $scope.paradas.length, latitude: ruta.end.latitude, longitude: ruta.end.longitude, title: ruta.end.name, icon: ruta.end.icon};
+      $scope.rutas[0] = {id:0, path:ruta.ruta_ida, stroke:{color:"#009D57"}, visible:true}
+      $scope.rutas[1] = {id:1, path:ruta.ruta_vuelta, stroke:{color:"#DB4436"}, visible:true}
       $('.angular-google-map-container').css('height', $(window).height() - (Math.round($('.angular-google-map-container').offset().top) + 15 ));
     });
   }, true);

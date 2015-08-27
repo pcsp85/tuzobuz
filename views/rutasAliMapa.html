@@ -1,6 +1,6 @@
 <div class="middle">
     <div style="margin-top:-15px;" class="text-right" >
-        <a class="btn btn-primary"href="#/rutasAlimentadoras">&lt; Regresar a Rutas Alimentadoras</a>
+        <a class="btn btn-primary"href="#/rutasAlimentadoras">&lt; Regresar</a>
     </div>
     <h1>{{h1}}</h1>
     <ui-gmap-google-map id="map"
@@ -13,8 +13,7 @@
          bounds="map.bounds">
          <ui-gmap-markers models="paradas" coords="'self'" icon="'icon'" labelContent="'title'">
         </ui-gmap-markers>
-        <ui-gmap-polylines ng-repeat="r in rutas" path="r.path" stroke="r.stroke" visible="r.visible" >
+        <ui-gmap-polylines models="rutas" path="'path'" stroke="'stroke'" visible="'visible'" >
         </ui-gmap-polylines>
-
     </ui-gmap-google-map>
 </div>
