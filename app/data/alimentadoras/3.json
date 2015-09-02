@@ -88,175 +88,111 @@
 	"ruta_ida":
 		[
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.026423,
+				"longitude":-98.779627
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.028029,
+				"longitude":-98.782794
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.037613,
+				"longitude":-98.781750
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.038471,
+				"longitude":-98.786684
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.038150,
+				"longitude":-98.786699
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.036052,
+				"longitude":-98.787058
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.030502,
+				"longitude":-98.787643
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.035846,
+				"longitude":-98.797917
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.035749,
+				"longitude":-98.797974
 			},
 			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
+				"latitude":20.035696,
+				"longitude":-98.797874
 			}
 		],
 	"ruta_vuelta":
 		[
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.035696,
+				"longitude":-98.797874
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.034495,
+				"longitude":-98.795455
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.031549,
+				"longitude":-98.789891
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.030170,
+				"longitude":-98.787137
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.029212,
+				"longitude":-98.787718
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.028870,
+				"longitude":-98.787757
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.028382,
+				"longitude":-98.787753
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.027417,
+				"longitude":-98.787564
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.027427,
+				"longitude":-98.787507
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.028396,
+				"longitude":-98.787664
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.029013,
+				"longitude":-98.787661
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.029194,
+				"longitude":-98.787593
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.030135,
+				"longitude":-98.787044
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.027695,
+				"longitude":-98.782345
 			},
 			{
-				"latitude":
-				"longitude":
+				"latitude":20.027698,
+				"longitude":-98.782210
 			},
 			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
-			},
-			{
-				"latitude":
-				"longitude":
+				"latitude":20.026373,
+				"longitude":-98.779624
 			}
 		]
 }
