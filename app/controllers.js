@@ -77,7 +77,7 @@ tuzobusController.controller('tbMenuCtrl',['$scope', '$http', function ($scope, 
 	};
 }]);
 
-tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 'Estaciones', function ($rootScope, $scope, $log, Estaciones){
+tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 'Estaciones', 'Alimentadoras', function ($rootScope, $scope, $log, Estaciones, Alimentadoras){
 	$scope.h1 = "Mapa";
   $scope.map = {
 		dragZoom: {options: {}},
@@ -93,6 +93,8 @@ tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 
     bounds: {},
 	};
   $scope.marcas = [];
+  $scope.lines_i = [];
+  $scope.lines_v = [];
 
   $scope.$watch(function (){
     return $scope.map.bounds;
@@ -100,6 +102,17 @@ tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 
     var estaciones = Estaciones.query( function (estaciones){
       $(estaciones).each(function (i,e){
         $scope.marcas[i] = {id:i, latitude: e.latitude, longitude: e.longitude, title: e.name, icon: e.icon};
+      });
+    });
+    Alimentadoras.query(function (rutasA){
+      $(rutasA).each(function (n,r){
+        var cn = 0;
+        Alimentadoras.get({idRuta:r.id}, function (ruta){
+          $scope.lines_i[n] = {id:n, path:ruta.ruta_ida, stroke:{color:"#009D57"}, visible:true}
+          $scope.lines_v[n] = {id:n, path:ruta.ruta_vuelta, stroke:{color:"#DB4436"}, visible:true}
+         cn++;
+         console.log(cn);
+        });
       });
     });
   }, true);
@@ -126,6 +139,8 @@ tuzobusController.controller('tbGMDetCtrl',['$rootScope', '$scope',"uiGmapLogger
     bounds: {}
 	};
   $scope.marcas = [];
+  $scope.lines_i = [];
+  $scope.lines_v = [];
 
   var flag = false;
 

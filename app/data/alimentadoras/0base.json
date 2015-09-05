@@ -1,16 +1,16 @@
 {
-	"id":"2b",
+	"id":"15a",
 	"begin":
 		{
-			"name": "Real de Joyas",
-			"icon": "assets/img/alimentadoras_icons/2.png",
+			"name": "La Loma / Abeto",
+			"icon": "assets/img/alimentadoras_icons/15.png",
 			"latitude":
 			"longitude":
 		},
 	"end":
 		{
-			"name": "Gabriel Mancera",
-			"icon": "assets/img/estaciones_icons/gabrielMancera.png",
+			"name": "Cuna del Futbol",
+			"icon": "assets/img/estaciones_icons/cunaDelFutbol.png",
 			"latitude":
 			"longitude":
 		},
