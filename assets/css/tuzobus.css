@@ -379,3 +379,6 @@ a:focus, a:hover{
 	color: #fff;
 	font-weight: 900;
 }
+.btn-primary{
+	background: #9DCD5D;
+}

@@ -1,5 +1,5 @@
 <div id="locationStatus"></div>
-<div ng-repeat="est in estaciones" class="estCercanas">
+<div ng-repeat="est in estaciones | orderBy:'+distancia' | limitTo:3" class="estCercanas">
 	<ul>
 		<li ng-repeat="s in est.serv" class="{{s.clase}}">
 			<img src="assets/img/estaciones_icons/bus_w.png"> {{s.name}}

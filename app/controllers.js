@@ -77,7 +77,7 @@ tuzobusController.controller('tbMenuCtrl',['$scope', '$http', function ($scope, 
 	};
 }]);
 
-tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 'Estaciones', 'Alimentadoras', function ($rootScope, $scope, $log, Estaciones, Alimentadoras){
+tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 'Estaciones', '$http', function ($rootScope, $scope, $log, Estaciones, $http){
 	$scope.h1 = "Mapa";
   $scope.map = {
 		dragZoom: {options: {}},
@@ -88,7 +88,7 @@ tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 
 		zoom: 12,
 		refresh: false,
     options: {
-      disableDefaultUI: true
+      disableDefaultUI: false
     },
     bounds: {},
 	};
@@ -102,17 +102,6 @@ tuzobusController.controller('tbGMCtrl',['$rootScope', '$scope','uiGmapLogger', 
     var estaciones = Estaciones.query( function (estaciones){
       $(estaciones).each(function (i,e){
         $scope.marcas[i] = {id:i, latitude: e.latitude, longitude: e.longitude, title: e.name, icon: e.icon};
-      });
-    });
-    Alimentadoras.query(function (rutasA){
-      $(rutasA).each(function (n,r){
-        var cn = 0;
-        Alimentadoras.get({idRuta:r.id}, function (ruta){
-          $scope.lines_i[n] = {id:n, path:ruta.ruta_ida, stroke:{color:"#009D57"}, visible:true}
-          $scope.lines_v[n] = {id:n, path:ruta.ruta_vuelta, stroke:{color:"#DB4436"}, visible:true}
-         cn++;
-         console.log(cn);
-        });
       });
     });
   }, true);
@@ -133,7 +122,7 @@ tuzobusController.controller('tbGMDetCtrl',['$rootScope', '$scope',"uiGmapLogger
 		zoom: tipo == "servicio" ? 12 : 14,
 		refresh: false,
     options: {
-      disableDefaultUI: true
+      disableDefaultUI: false
     },
     events: {},
     bounds: {}
@@ -291,16 +280,14 @@ tuzobusController.controller('tbHorarios',['$scope', '$http', function ($scope, 
 }]);
 
 tuzobusController.controller('tbEstacionesCercanas', ['$scope', 'filterFilter', 'Estaciones', 'Servicios', function ($scope, filterFilter, Estaciones, Servicios){
-  navigator.geolocation.clearWatch($scope.position);
-  $scope.position = navigator.geolocation.watchPosition(posSuccess, posError, {timeout: 3000});
+  $scope.position = navigator.geolocation.getCurrentPosition(posSuccess, posError, {enableHighAccuracy: true,timeout: 3000});
 
   function posSuccess (position){
     var search = {
       'latitude': position.coords.latitude,
       'longitude': position.coords.longitude
     }
-    //var presition = 0.0055;
-    var presition = 1.004;
+    var presition = 2.004;
     var estaciones = [];
     var la_ls = parseFloat(search.latitude) + presition, la_li = parseFloat(search.latitude) - presition;
     var lo_ls = parseFloat(search.longitude) + presition, lo_li = parseFloat(search.longitude) - presition;
@@ -367,7 +354,7 @@ tuzobusController.controller('alimentadorasMapa', ['$rootScope', '$scope', 'uiGm
     zoom: 15,
     refresh: false,
     options: {
-      disableDefaultUI: true
+      disableDefaultUI: false
     },
     events: {},
     bounds: {}
