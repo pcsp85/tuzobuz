@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$('.navmenu-default').offcanvas('hide');
 	});
 	document.addEventListener("menubutton", menuButton, false);
-	//document.addEventListener('deviceready', AdsMob, false);
+	document.addEventListener('deviceready', AdsMob, false);
 });
 
 var est_toogle = function (o){
